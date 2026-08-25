@@ -1,0 +1,979 @@
+type _ImmutableObjectStorageRefillResult = 
+ record {
+   success: opt bool;
+   topped_up_amount: opt nat;
+ };
+type _ImmutableObjectStorageRefillInformation = record {
+                                                  proposed_top_up_amount:
+                                                   opt nat;};
+type _ImmutableObjectStorageCreateCertificateResult = 
+ record {
+   blob_hash: text;
+   method: text;
+ };
+type Zahlungsmodalitaet = 
+ variant {
+   jahres;
+   monats;
+ };
+type ZahlungsStatus = 
+ variant {
+   bezahlt;
+   offen;
+   ueberfaellig;
+ };
+type ZahlungId = text;
+type ZahlungEingangStatus = 
+ variant {
+   bestaetigt;
+   eingegangen;
+ };
+type Zahlung = 
+ record {
+   betrag: nat;
+   createdAt: Timestamp;
+   datum: text;
+   id: ZahlungId;
+   kanzleiId: KanzleiId;
+   rechnungId: RechnungId;
+   status: ZahlungEingangStatus;
+ };
+type VorlageLayoutV2 = 
+ record {
+   elements: vec LayoutElement;
+   gridCols: nat;
+   gridRows: nat;
+   marginBottomMm: float64;
+   marginLeftMm: float64;
+   marginRightMm: float64;
+   marginTopMm: float64;
+   pageHeightMm: float64;
+   pageWidthMm: float64;
+ };
+type VorlageLayout = 
+ record {
+   absenderPosition: Position;
+   empfaengerPosition: Position;
+   fusszeile: text;
+   logoPosition: Position;
+ };
+type VerificationError = 
+ variant {
+   alreadyRegistered;
+   codeExpired;
+   emailAlreadyVerified;
+   invalidCode;
+   invalidInput;
+   notFound;
+   principalAlreadyUsed;
+   resendTooSoon;
+   sendFailed;
+   tooManyAttempts;
+ };
+type Value = 
+ variant {
+   "bool": bool;
+   float: float64;
+   "int": int;
+   "nat": nat;
+   "null";
+   "text": text;
+ };
+type Timestamp = int;
+type TimerState = 
+ record {
+   baseDauer: nat;
+   leistungId: LeistungId;
+   startTime: int;
+   userId: principal;
+ };
+type SupportStatus = 
+ variant {
+   archiviert;
+   erledigt;
+   in_bearbeitung;
+   neu;
+ };
+type SupportSenderType = 
+ variant {
+   platformAdmin;
+   user;
+ };
+type SupportMessageId = text;
+type SupportMessage = 
+ record {
+   conversationId: SupportConversationId;
+   createdAt: int;
+   id: SupportMessageId;
+   message: text;
+   readAt: opt int;
+   senderType: SupportSenderType;
+   senderUserId: text;
+   senderUserName: text;
+ };
+type SupportConversationWithMessages = 
+ record {
+   conversation: SupportConversation;
+   messages: vec SupportMessage;
+ };
+type SupportConversationId = text;
+type SupportConversation = 
+ record {
+   appRoute: text;
+   appVersion: text;
+   category: SupportCategory;
+   createdAt: int;
+   createdByUserId: text;
+   createdByUserName: text;
+   id: SupportConversationId;
+   kanzleiId: KanzleiId;
+   status: SupportStatus;
+   subject: text;
+   updatedAt: int;
+ };
+type SupportCategory = 
+ variant {
+   feedback;
+   fehler;
+   frage;
+   verbesserungsvorschlag;
+ };
+type SuperAdminWhitelistEntry = 
+ record {
+   addedAt: Timestamp;
+   "principal": principal;
+ };
+type StatusHistoryEntry = 
+ record {
+   month: nat;
+   status: text;
+   year: nat;
+ };
+type Standardtexte = 
+ record {
+   einleitung: text;
+   rechnungstitel: text;
+   schlusstext: text;
+   zahlungshinweis: text;
+ };
+type RoleMigrationResult = 
+ record {
+   changed: bool;
+   newRole: Role;
+   previousRole: Role;
+   "principal": principal;
+ };
+type Role = 
+ variant {
+   admin;
+   anwalt;
+   mandant;
+   mitarbeiter;
+   plattform_admin;
+ };
+type RetentionPolicyId = text;
+type RetentionPolicy = 
+ record {
+   categoryName: text;
+   createdAt: Timestamp;
+   id: RetentionPolicyId;
+   isLocked: bool;
+   kanzleiId: KanzleiId;
+   legalBasis: opt text;
+   retentionYears: nat;
+   updatedAt: Timestamp;
+ };
+type Result__1 = 
+ record {
+   hasMore: bool;
+   rows: vec vec Cell;
+ };
+type Result_9 = 
+ variant {
+   err: text;
+   ok: DsrRequest;
+ };
+type Result_8 = 
+ variant {
+   err: text;
+   ok: KanzleiStammdaten;
+ };
+type Result_7 = 
+ variant {
+   err: text;
+   ok: Klient;
+ };
+type Result_6 = 
+ variant {
+   err: text;
+   ok: Leistung;
+ };
+type Result_5 = 
+ variant {
+   err: text;
+   ok: Mandat;
+ };
+type Result_4 = 
+ variant {
+   err: text;
+   ok: RetentionPolicy;
+ };
+type Result_3 = 
+ variant {
+   err: text;
+   ok: SupportConversation;
+ };
+type Result_27 = 
+ variant {
+   err: text;
+   ok: SupportMessage;
+ };
+type Result_26 = 
+ variant {
+   err: text;
+   ok: Zahlung;
+ };
+type Result_25 = 
+ variant {
+   err: VerificationError;
+   ok: KanzleiId;
+ };
+type Result_24 = 
+ variant {
+   err: text;
+   ok: Rechnung;
+ };
+type Result_23 = 
+ variant {
+   err: text;
+   ok: vec SupportConversation;
+ };
+type Result_22 = 
+ variant {
+   err: text;
+   ok: BudgetSummary;
+ };
+type Result_21 = 
+ variant {
+   err: text;
+   ok: SupportConversationWithMessages;
+ };
+type Result_20 = 
+ variant {
+   err: text;
+   ok: Role;
+ };
+type Result_2 = 
+ variant {
+   err: text;
+   ok: Leistungserbringer;
+ };
+type Result_19 = 
+ variant {
+   err: text;
+   ok: MigrationSummary;
+ };
+type Result_18 = 
+ variant {
+   err: text;
+   ok: PromotionResult;
+ };
+type Result_17 = 
+ variant {
+   err: text;
+   ok: text;
+ };
+type Result_16 = 
+ variant {
+   err: text;
+   ok: Rechnungsvorlage;
+ };
+type Result_15 = 
+ variant {
+   err: VerificationError;
+   ok: PendingRegistrationId;
+ };
+type Result_14 = 
+ variant {
+   err: text;
+   ok: TimerState;
+ };
+type Result_13 = 
+ variant {
+   err: text;
+   ok: nat;
+ };
+type Result_12 = 
+ variant {
+   err: text;
+   ok: Auslage;
+ };
+type Result_11 = 
+ variant {
+   err: text;
+   ok: DataFlowEntry;
+ };
+type Result_10 = 
+ variant {
+   err: text;
+   ok: DataInventoryEntry;
+ };
+type Result_1 = 
+ variant {
+   err: text;
+   ok;
+ };
+type Result = 
+ variant {
+   err: VerificationError;
+   ok;
+ };
+type ReportPeriod = 
+ variant {
+   jaehrlich;
+   monatlich: nat;
+ };
+type Rechnungsvorlage = 
+ record {
+   kanzleiId: KanzleiId;
+   layout: VorlageLayout;
+   layoutV2: opt VorlageLayoutV2;
+   logoBlob: opt ExternalBlob;
+   standardtexte: Standardtexte;
+   updatedAt: Timestamp;
+ };
+type RechnungId = text;
+type RechnungFilter = 
+ record {
+   akquisiteurId: opt principal;
+   datumBis: opt text;
+   datumVon: opt text;
+   mandatId: opt MandatId;
+   zahlungsstatus: opt ZahlungsStatus;
+ };
+type Rechnung = 
+ record {
+   auslageIds: vec AuslageId;
+   createdAt: Timestamp;
+   faelligkeitsdatum: text;
+   id: RechnungId;
+   kanzleiId: KanzleiId;
+   leistungserbringerId: principal;
+   leistungspositionen: vec LeistungId;
+   leistungszeitraumBis: text;
+   leistungszeitraumVon: text;
+   mandatId: MandatId;
+   mwstBetrag: nat;
+   rechnungsdatum: text;
+   rechnungsnummer: text;
+   subtotal: nat;
+   total: nat;
+   waehrung: text;
+   zahlungsbedingungen: text;
+   zahlungsstatus: ZahlungsStatus;
+ };
+type ProviderReport = 
+ record {
+   comparisonData: vec ProviderComparison;
+   monthlyBreakdown: vec MonthlyTotal;
+   totals: MonthlyTotal;
+ };
+type ProviderComparison = 
+ record {
+   provider: Leistungserbringer;
+   total: nat;
+ };
+type PromotionResult = 
+ record {
+   changed: bool;
+   email: text;
+   "principal": opt principal;
+   whitelistAdded: bool;
+ };
+type Position = 
+ variant {
+   links;
+   rechts;
+   zentriert;
+ };
+type PendingRegistrationView = 
+ record {
+   createdAt: Timestamp;
+   email: text;
+   emailVerified: bool;
+   id: PendingRegistrationId;
+   kanzleiName: text;
+   nachname: text;
+   titel: text;
+   verifiedAt: opt Timestamp;
+   vorname: text;
+   zahlungsmodalitaet: opt Zahlungsmodalitaet;
+ };
+type PendingRegistrationId = text;
+type MonthlyTotal = 
+ record {
+   auslagen: nat;
+   honorar: nat;
+   month: nat;
+   total: nat;
+   verrechnete: nat;
+   year: nat;
+ };
+type MigrationSummary = 
+ record {
+   convertedCount: nat;
+   results: vec RoleMigrationResult;
+   unchangedCount: nat;
+ };
+type MandatStatus = 
+ variant {
+   aktiv;
+   archiviert;
+ };
+type MandatId = text;
+type Mandat = 
+ record {
+   akquisiteurId: principal;
+   akquisitionsbonus: nat;
+   auslagenregelung: Auslagenregelung;
+   autokilometer: float64;
+   bezeichnung: text;
+   budget: nat;
+   createdAt: Timestamp;
+   id: MandatId;
+   kanzleiId: KanzleiId;
+   klientId: KlientId;
+   kostenProKopie: float64;
+   kostenProScan: float64;
+   leistungenAusweisen: bool;
+   mwstSatz: nat;
+   pauschalBetrag: nat;
+   portoAPost: float64;
+   portoBPost: float64;
+   portoEinschreiben: float64;
+   rundungAktiv: bool;
+   standardStundensatz: nat;
+   status: MandatStatus;
+   waehrung: text;
+   zahlungsbedingungen: text;
+ };
+type Leistungserbringer = 
+ record {
+   email: text;
+   id: principal;
+   isAdmin: bool;
+   kanzleiId: KanzleiId;
+   nachname: text;
+   registeredAt: Timestamp;
+   role: opt Role;
+   status: text;
+   statusHistory: vec StatusHistoryEntry;
+   titel: text;
+   vorname: text;
+ };
+type LeistungStatus = 
+ variant {
+   offen;
+   verrechnet;
+ };
+type LeistungId = text;
+type LeistungFilter = 
+ record {
+   datumBis: opt text;
+   datumVon: opt text;
+   leistungserbringerId: opt principal;
+   mandatId: opt MandatId;
+   status: opt LeistungStatus;
+ };
+type Leistung = 
+ record {
+   createdAt: Timestamp;
+   datum: text;
+   dauer: nat;
+   honorar: nat;
+   id: LeistungId;
+   kanzleiId: KanzleiId;
+   leistungserbringerId: principal;
+   mandatId: MandatId;
+   rechnungId: opt RechnungId;
+   status: LeistungStatus;
+   taetigkeit: text;
+ };
+type LayoutElementId = 
+ variant {
+   absenderadresse;
+   einleitung;
+   empfaengeradresse;
+   fusszeile;
+   leistungspositionen;
+   logo;
+   mandatsinfo;
+   rechnungsmetadaten;
+   schlusstext;
+   spesenAuslagen;
+   summenblock;
+   zahlungsinformationen;
+ };
+type LayoutElement = 
+ record {
+   alignment: opt Position;
+   bold: opt bool;
+   fontFamily: opt text;
+   fontSize: opt nat;
+   gridArea: GridArea;
+   heightMm: opt float64;
+   id: LayoutElementId;
+   italic: opt bool;
+   order: nat;
+   visible: bool;
+   widthMm: opt float64;
+   xMm: opt float64;
+   yMm: opt float64;
+   zOrder: opt nat;
+ };
+type KlientId = text;
+type Klient = 
+ record {
+   createdAt: Timestamp;
+   email: text;
+   id: KlientId;
+   kanzleiId: KanzleiId;
+   name: text;
+   plzOrt: text;
+   strasse: text;
+   telefon: text;
+ };
+type KanzleiStammdaten = 
+ record {
+   email: text;
+   kanzleiLogoBlob: opt blob;
+   kanzleiname: text;
+   land: text;
+   mwstNr: text;
+   ort: text;
+   plz: text;
+   strasseHausnummer: text;
+   telefon: text;
+   uid: text;
+   website: text;
+ };
+type KanzleiOverview = 
+ record {
+   aboModell: AboModell;
+   billingStatus: BillingStatus;
+   createdAt: Timestamp;
+   id: KanzleiId;
+   name: text;
+   stammdatenAdresse: text;
+   stammdatenKanzleiname: text;
+   stammdatenMwstNr: text;
+   stammdatenUid: text;
+   status: text;
+   userCount: nat;
+ };
+type KanzleiId = text;
+type Kanzlei = 
+ record {
+   createdAt: Timestamp;
+   defaultStundensatz: nat;
+   id: KanzleiId;
+   name: text;
+   stammdaten: opt KanzleiStammdaten;
+   status: text;
+   zahlungsmodalitaet: opt Zahlungsmodalitaet;
+ };
+type InviteToken = 
+ record {
+   createdAt: Timestamp;
+   createdBy: principal;
+   email: text;
+   kanzleiId: KanzleiId;
+   redeemedBy: opt principal;
+   token: text;
+ };
+type GridArea = 
+ record {
+   col: nat;
+   colSpan: nat;
+   row: nat;
+   rowSpan: nat;
+ };
+type GehaltInfo = 
+ record {
+   akquisitionsboni: nat;
+   gesamtgehalt: nat;
+   kanzleianteil: nat;
+   leistungsbasiert: nat;
+   provider: Leistungserbringer;
+ };
+type FirmReport = 
+ record {
+   monthlyBreakdown: vec MonthlyTotal;
+   totals: MonthlyTotal;
+ };
+type ExternalBlob = blob;
+type DsrType = 
+ variant {
+   auskunft;
+   berichtigung;
+   loeschung;
+ };
+type DsrStatus = 
+ variant {
+   abgeschlossen;
+   erfasst;
+   inBearbeitung;
+ };
+type DsrRequest = 
+ record {
+   assignedTo: opt principal;
+   completedAt: opt Timestamp;
+   createdAt: Timestamp;
+   dsrType: DsrType;
+   id: DsrId;
+   kanzleiId: KanzleiId;
+   notes: opt text;
+   requesterEmail: text;
+   requesterId: opt KlientId;
+   requesterName: text;
+   status: DsrStatus;
+   updatedAt: Timestamp;
+ };
+type DsrId = text;
+type DsgVersion = 
+ record {
+   content: opt text;
+   publishedAt: Timestamp;
+   version: text;
+ };
+type DataInventoryId = text;
+type DataInventoryEntry = 
+ record {
+   accessRole: Role;
+   categoryName: text;
+   description: opt text;
+   id: DataInventoryId;
+   kanzleiId: KanzleiId;
+   storageDuration: text;
+   storageLocation: text;
+ };
+type DataFlowId = text;
+type DataFlowEntry = 
+ record {
+   destination: text;
+   flowName: text;
+   id: DataFlowId;
+   isExternal: bool;
+   kanzleiId: KanzleiId;
+   legalBasis: text;
+   purpose: text;
+   what: text;
+ };
+type DataAccessAction = 
+ variant {
+   lesen;
+   loeschen;
+   schreiben;
+ };
+type DashboardStats = 
+ record {
+   auditExports: nat;
+   missingConsents: nat;
+   openDsrRequests: nat;
+   pendingDeletions: nat;
+   totalRecordsByCategory: vec record {
+                                 text;
+                                 nat;
+                               };
+ };
+type ConsentRecord = 
+ record {
+   consentGiven: bool;
+   dsgVersion: text;
+   id: ConsentId;
+   kanzleiId: KanzleiId;
+   klientId: KlientId;
+   "principal": principal;
+   timestamp: Timestamp;
+ };
+type ConsentId = text;
+type Cell = 
+ record {
+   name: text;
+   value: Value;
+ };
+type BudgetSummary = 
+ record {
+   mandatId: MandatId;
+   restbudget: int;
+   totalAuslagen: nat;
+   totalBudget: nat;
+   totalHonorar: nat;
+ };
+type BillingStatus = 
+ variant {
+   bezahlt;
+   offen;
+   ueberfaellig;
+ };
+type Auslagenregelung = 
+ variant {
+   Effektiv;
+   Keine;
+   Pauschal;
+ };
+type AuslagenStatus = 
+ variant {
+   offen;
+   verrechnet;
+ };
+type AuslagenKategorie = 
+ variant {
+   andere;
+   kopien;
+   porto;
+   reise;
+ };
+type AuslagenFilter = 
+ record {
+   datumBis: opt text;
+   datumVon: opt text;
+   leistungserbringerId: opt principal;
+   mandatId: opt MandatId;
+   status: opt AuslagenStatus;
+ };
+type AuslageId = text;
+type Auslage = 
+ record {
+   beschreibung: text;
+   betrag: nat;
+   createdAt: Timestamp;
+   datum: text;
+   id: AuslageId;
+   kanzleiId: KanzleiId;
+   kategorie: AuslagenKategorie;
+   leistungserbringerId: principal;
+   mandatId: MandatId;
+   rechnungId: opt RechnungId;
+   status: AuslagenStatus;
+ };
+type AuditTrailFilter = 
+ record {
+   actorPrincipal: opt principal;
+   entityId: opt text;
+   entityType: opt text;
+   fromTimestamp: opt Timestamp;
+   kanzleiId: KanzleiId;
+   toTimestamp: opt Timestamp;
+ };
+type AuditLogId = text;
+type AuditLogEntry = 
+ record {
+   action: text;
+   actorPrincipal: principal;
+   afterValue: opt text;
+   beforeValue: opt text;
+   entityId: text;
+   entityType: text;
+   id: AuditLogId;
+   kanzleiId: KanzleiId;
+   timestamp: Timestamp;
+ };
+type AllKanzleienActiveUsersReport = 
+ record {
+   kanzleiId: KanzleiId;
+   kanzleiName: text;
+   months: vec ActiveUserMonth;
+   year: nat;
+   yearTotal: int;
+ };
+type ActiveUsersYearReport = 
+ record {
+   kanzleiId: KanzleiId;
+   months: vec ActiveUserMonth;
+   year: nat;
+   yearTotal: int;
+ };
+type ActiveUserMonth = 
+ record {
+   month: nat;
+   total: int;
+   users: vec ActiveUserEntry;
+   year: nat;
+ };
+type ActiveUserEntry = 
+ record {
+   isActive: bool;
+   name: text;
+   userId: principal;
+ };
+type AboModell = 
+ variant {
+   jahres;
+   keine;
+   monats;
+ };
+service : {
+  _immutableObjectStorageBlobsAreLive: (hashes: vec blob) -> (vec bool) query;
+  _immutableObjectStorageBlobsToDelete: () -> (vec blob) query;
+  _immutableObjectStorageConfirmBlobDeletion: (blobs: vec blob) -> ();
+  _immutableObjectStorageCreateCertificate: (blobHash: text) ->
+   (_ImmutableObjectStorageCreateCertificateResult);
+  _immutableObjectStorageRefillCashier: (refillInformation:
+   opt _ImmutableObjectStorageRefillInformation) ->
+   (_ImmutableObjectStorageRefillResult);
+  _immutableObjectStorageUpdateGatewayPrincipals: () -> ();
+  addSuperAdmin: (newAdmin: principal) -> (Result_1);
+  addSupportMessage: (conversationId: SupportConversationId, message:
+   text) -> (Result_27);
+  addZahlung: (rechnungId: text, datum: text, betrag: nat) -> (Result_26);
+  archivierMandat: (id: text) -> (Result_1);
+  changeEmail: (pendingId: PendingRegistrationId, newEmail: text) -> (Result);
+  completeRegistration: (pendingId: PendingRegistrationId) -> (Result_25);
+  createAuslage: (mandatId: text, beschreibung: text, kategorie:
+   AuslagenKategorie, betrag: nat, datum: text) -> (Result_12);
+  createDsrRequest: (req: DsrRequest) -> (DsrRequest);
+  createInviteLink: (email: text) -> (Result_17);
+  createKlient: (name: text, strasse: text, plzOrt: text, telefon: text,
+   email: text) -> (Result_7);
+  createLeistung: (mandatId: text, taetigkeit: text, datum: text, dauer:
+   nat) -> (Result_6);
+  createMandat: (klientId: text, bezeichnung: text, akquisiteurId: principal,
+   akquisitionsbonus: nat, mwstSatz: nat, budget: nat, rundungAktiv: 
+   bool, auslagenregelung: Auslagenregelung, pauschalBetrag: nat,
+   zahlungsbedingungen: text, waehrung: text, standardStundensatz: nat,
+   kostenProKopie: float64, kostenProScan: float64, portoAPost: float64,
+   portoBPost: float64, portoEinschreiben: float64, autokilometer: float64,
+   leistungenAusweisen: bool) -> (Result_5);
+  createRechnung: (mandatId: text, leistungsIds: vec text, auslageIds:
+   vec text, rechnungsdatum: text, zahlungsbedingungen: text,
+   leistungszeitraumVon: text, leistungszeitraumBis: text) -> (Result_24);
+  createSupportConversation: (category: SupportCategory, subject: text,
+   message: text, appRoute: text, appVersion: text) -> (Result_3);
+  deactivateKanzlei: (kanzleiId: text) -> (Result_1);
+  deleteAuslage: (id: text) -> (Result_1);
+  deleteKanzlei: (kanzleiId: text) -> (Result_1);
+  deleteKlient: (id: text) -> (Result_1);
+  deleteLeistung: (id: text) -> (Result_1);
+  deleteLeistungserbringer: (userId: text) -> (Result_1);
+  deleteMandat: (id: text) -> (Result_1);
+  execute: (qJson: text) -> (Result__1) query;
+  executeDeletion: (categoryName: text, entityId: text) -> (Result_1);
+  exportAuditTrailCsv: (filter: AuditTrailFilter) -> (text) query;
+  exportAuditTrailPdf: (filter: AuditTrailFilter) -> (blob) query;
+  exportKanzleienCsv: () -> (text) query;
+  exportKanzleienPdf: () -> (blob) query;
+  getActiveUsersPerMonth: (kanzleiId: KanzleiId, year: nat) ->
+   (ActiveUsersYearReport) query;
+  getAllActiveUsersPerMonth: (year: nat) ->
+   (vec AllKanzleienActiveUsersReport) query;
+  getAllKanzleienOverview: () -> (vec KanzleiOverview) query;
+  getAllSupportConversations: () -> (Result_23);
+  getAuditTrail: (filter: AuditTrailFilter) -> (vec AuditLogEntry) query;
+  getAuslagen: (filter: AuslagenFilter) -> (vec Auslage) query;
+  getBudgetSummaries: () -> (vec BudgetSummary) query;
+  getBudgetSummary: (mandatId: MandatId) -> (Result_22) query;
+  getConsentRecords: (kanzleiId: KanzleiId) -> (vec ConsentRecord) query;
+  getCurrentUser: () -> (opt Leistungserbringer) query;
+  getDashboardStats: (kanzleiId: KanzleiId) -> (DashboardStats) query;
+  getDataFlows: (kanzleiId: KanzleiId) -> (vec DataFlowEntry) query;
+  getDataInventory: (kanzleiId: KanzleiId) -> (vec DataInventoryEntry) query;
+  getDsgVersion: () -> (opt DsgVersion) query;
+  getDsrRequests: (kanzleiId: KanzleiId) -> (vec DsrRequest) query;
+  getGehaltReport: (year: nat, month: opt nat) -> (vec GehaltInfo) query;
+  getInviteLinks: () -> (vec InviteToken) query;
+  getKanzlei: () -> (opt Kanzlei) query;
+  getKanzleiReport: (year: nat, period: ReportPeriod) -> (FirmReport) query;
+  getKanzleiStammdaten: () -> (opt KanzleiStammdaten) query;
+  getKlient: (id: text) -> (opt Klient) query;
+  getKlienten: () -> (vec Klient) query;
+  getLeistungen: (filter: LeistungFilter) -> (vec Leistung) query;
+  getLeistungserbringer: () -> (vec Leistungserbringer) query;
+  getLeistungserbringerByKanzlei: (kanzleiId: KanzleiId) ->
+   (vec Leistungserbringer) query;
+  getLeistungserbringerReport: (providerId: opt principal, year: nat, period:
+   ReportPeriod) -> (ProviderReport) query;
+  getLogo: () -> (opt ExternalBlob) query;
+  getMandat: (id: text) -> (opt Mandat) query;
+  getMandate: (klientId: opt text) -> (vec Mandat) query;
+  getMyRole: () -> (opt Role) query;
+  getMySupportConversations: () -> (vec SupportConversation);
+  getOrCreateUser: () -> (Result_2);
+  getPendingDeletions: (kanzleiId: KanzleiId) ->
+   (vec record {
+          text;
+          text;
+          nat;
+        }) query;
+  getPendingRegistration: (pendingId: PendingRegistrationId) ->
+   (opt PendingRegistrationView) query;
+  getRechnung: (id: text) -> (opt Rechnung) query;
+  getRechnungen: (filter: RechnungFilter) -> (vec Rechnung) query;
+  getRechnungsvorlage: () -> (opt Rechnungsvorlage) query;
+  getRetentionPolicies: (kanzleiId: KanzleiId) -> (vec RetentionPolicy) query;
+  getSuperAdmins: () -> (vec SuperAdminWhitelistEntry) query;
+  getSupportConversation: (conversationId: SupportConversationId) ->
+   (Result_21);
+  getTimer: (leistungId: LeistungId) -> (opt TimerState) query;
+  getUnreadSupportCountForAdmin: () -> (Result_13);
+  getUnreadSupportCountForUser: () -> (nat);
+  getUserRole: (userId: principal) -> (Result_20) query;
+  getZahlungen: () -> (vec Zahlung) query;
+  isSuperAdmin: () -> (bool) query;
+  listTimers: () -> (vec TimerState) query;
+  logAuditEntry: (action: text, entityType: text, entityId: text,
+   beforeValue: opt text, afterValue: opt text) -> ();
+  logDataAccess: (dataType: text, entityId: text, action:
+   DataAccessAction) -> ();
+  markSupportMessageRead: (conversationId: SupportConversationId) ->
+   (Result_1);
+  migrateRoles: () -> (Result_19);
+  promoteJoaoMarques: () -> (Result_18);
+  reactivateKanzlei: (kanzleiId: text) -> (Result_1);
+  recordConsent: (klientId: KlientId, dsgVersion: text) -> (ConsentRecord);
+  redeemInviteLink: (token: text, vorname: text, nachname: text, titel: 
+   text, email: text) -> (Result_2);
+  registerKanzlei: (name: text, adminTitel: text, adminVorname: text,
+   adminNachname: text, adminEmail: text, zahlungsmodalitaet:
+   opt Zahlungsmodalitaet) -> (Result_17);
+  removeLeistungserbringer: (userId: principal) -> (Result_1);
+  removeLogo: () -> (Result_1);
+  removeSuperAdmin: (adminToRemove: principal) -> (Result_1);
+  saveRechnungsvorlage: (vorlage: Rechnungsvorlage) -> (Result_16);
+  schema: () -> (text) query;
+  sendVerificationCode: (kanzleiName: text, titel: text, vorname: text,
+   nachname: text, email: text, zahlungsmodalitaet:
+   opt Zahlungsmodalitaet) -> (Result_15);
+  startTimer: (leistungId: LeistungId, baseDauer: nat) -> (Result_14);
+  stopTimer: (leistungId: LeistungId) -> (Result_13);
+  updateAuslage: (id: text, beschreibung: text, betrag: nat) -> (Result_12);
+  updateDataFlowEntry: (id: DataFlowId, entry: DataFlowEntry) -> (Result_11);
+  updateDataInventoryEntry: (id: DataInventoryId, entry:
+   DataInventoryEntry) -> (Result_10);
+  updateDsgVersion: (version: text, content: opt text) -> (DsgVersion);
+  updateDsrRequest: (id: DsrId, status: DsrStatus, notes: opt text) ->
+   (Result_9);
+  updateKanzleiStammdaten: (stammdaten: KanzleiStammdaten) -> (Result_8);
+  updateKanzleiStundensatz: (defaultStundensatz: nat) -> (Result_1);
+  updateKlient: (id: text, name: text, strasse: text, plzOrt: text, telefon:
+   text, email: text) -> (Result_7);
+  updateLeistung: (id: text, taetigkeit: text, dauer: nat) -> (Result_6);
+  updateLeistungserbringer: (userId: principal, vorname: text, nachname:
+   text, titel: text) -> (Result_1);
+  updateMandat: (id: text, bezeichnung: text, akquisiteurId: principal,
+   akquisitionsbonus: nat, mwstSatz: nat, budget: nat, rundungAktiv: 
+   bool, auslagenregelung: Auslagenregelung, pauschalBetrag: nat,
+   zahlungsbedingungen: text, waehrung: text, standardStundensatz: nat,
+   kostenProKopie: float64, kostenProScan: float64, portoAPost: float64,
+   portoBPost: float64, portoEinschreiben: float64, autokilometer: float64,
+   leistungenAusweisen: bool) -> (Result_5);
+  updateRetentionPolicy: (id: RetentionPolicyId, retentionYears: nat,
+   isLocked: bool) -> (Result_4);
+  updateSupportStatus: (conversationId: SupportConversationId, newStatus:
+   SupportStatus) -> (Result_3);
+  updateUserProfile: (vorname: text, nachname: text) -> (Result_1);
+  updateUserRole: (userId: principal, newRole: Role) -> (Result_2);
+  updateZahlungsstatus: (id: text, status: ZahlungsStatus) -> (Result_1);
+  uploadLogo: ("blob": ExternalBlob) -> (Result_1);
+  verifyEmail: (pendingId: PendingRegistrationId, code: text) -> (Result);
+}

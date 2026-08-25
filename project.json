@@ -1,0 +1,16 @@
+{
+  "overview": "iReport Legal is a legal practice management app where law firms register only after verifying their email address, then sign in with Internet Identity.",
+  "features": [
+    "Three-step registration flow with email verification",
+    "Six-digit one-time code sent by email",
+    "Internet Identity sign-in to complete registration",
+    "Secure code handling with hashing and rate limiting"
+  ],
+  "category": "productivity",
+  "tags": [
+    "legal",
+    "registration",
+    "email-verification"
+  ],
+  "last_updated": "2026-08-17T17:18:45.433Z"
+}

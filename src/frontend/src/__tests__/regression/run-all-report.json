@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-08-09T13:43:42.091Z",
+  "exitCode": 0,
+  "summary": {
+    "pass": 13,
+    "fail": 0,
+    "partial": 0,
+    "notTestable": 1,
+    "total": 14
+  },
+  "missing": [],
+  "results": [
+    {
+      "testfall": "2.1-CROSS-TENANT",
+      "ergebnis": "PASS",
+      "beobachtet": "canDeactivate=false, removeLeistungserbringer.err=Keine Berechtigung, diesen Leistungserbringer zu deaktivieren, target.status=aktiv",
+      "methode": "echter Backend-Call-Replik (canDeactivateLeistungserbringer + removeLeistungserbringer)"
+    },
+    {
+      "testfall": "2.2-ROLLENCHECK",
+      "ergebnis": "PASS",
+      "beobachtet": "(a) anwalt→admin: canDeactivate=false, err=Keine Berechtigung, diesen Leistungserbringer zu deaktivieren, admin.status=aktiv; (b) admin→anwalt: canDeactivate=true, ok=null, user.status=inaktiv",
+      "methode": "echter Backend-Call-Replik (canDeactivateLeistungserbringer + removeLeistungserbringer)"
+    },
+    {
+      "testfall": "2.3-USER-DEACTIVATED",
+      "ergebnis": "PASS",
+      "beobachtet": "(a) READ getKlienten-Pfad: trapped=true, message='Benutzer ist deaktiviert'; (b) WRITE createKlient: trapped=true, message='Benutzer ist deaktiviert'",
+      "methode": "echter Backend-Call-Replik (removeLeistungserbringer + requireActiveUserAndKanzlei via createKlient)"
+    },
+    {
+      "testfall": "2.4-KANZLEI-DEACTIVATED",
+      "ergebnis": "PASS",
+      "beobachtet": "kanzlei.status=inaktiv, user.status=aktiv; (a) READ getKlienten-Pfad: trapped=true, message='Kanzlei ist deaktiviert'; (b) WRITE createKlient: trapped=true, message='Kanzlei ist deaktiviert'",
+      "methode": "echter Backend-Call-Replik (deactivateKanzlei + requireActiveUserAndKanzlei via createKlient)"
+    },
+    {
+      "testfall": "2.5-PLATTFORM-ADMIN",
+      "ergebnis": "PASS",
+      "beobachtet": "(a) deactivateKanzlei(A): ok=null, status=inaktiv; (b) reactivateKanzlei(A): ok=null, status=aktiv; (c) deleteKanzlei(B): ok=null, exists=false",
+      "methode": "echter Backend-Call-Replik (deactivateKanzlei + reactivateKanzlei + deleteKanzlei)"
+    },
+    {
+      "testfall": "A-JAEHRLICH",
+      "ergebnis": "PASS",
+      "beobachtet": "kanzlei.zahlungsmodalitaet=jahres, deriveAboModell=jahres, overview.aboModell=jahres",
+      "methode": "echter Backend-Call-Replik (registerKanzlei + deriveAboModell + getAllKanzleienOverview)"
+    },
+    {
+      "testfall": "B-MONATLICH",
+      "ergebnis": "PASS",
+      "beobachtet": "kanzlei.zahlungsmodalitaet=monats, deriveAboModell=monats, overview.aboModell=monats",
+      "methode": "echter Backend-Call-Replik (registerKanzlei + deriveAboModell + getAllKanzleienOverview)"
+    },
+    {
+      "testfall": "C-KEINE",
+      "ergebnis": "PASS",
+      "beobachtet": "kanzlei.zahlungsmodalitaet=null, deriveAboModell=keine, overview.aboModell=keine",
+      "methode": "echter Backend-Call-Replik (deriveAboModell + getAllKanzleienOverview) + direkter State-Aufbau für Alt-Kanzlei"
+    },
+    {
+      "testfall": "GUARD-NON-SUPER-ADMIN",
+      "ergebnis": "PASS",
+      "beobachtet": "trap geworfen: 'Nur Super-Admins dürfen diese Aktion ausführen'",
+      "methode": "echter Backend-Call-Replik (getAllKanzleienOverview mit Nicht-Super-Admin caller)"
+    },
+    {
+      "testfall": "2.6.a Monotone/eindeutige Audit-IDs",
+      "ergebnis": "PASS",
+      "beobachtet": "IDs=AUD-TEST-TENANT-A-1,AUD-TEST-TENANT-A-2,AUD-TEST-TENANT-A-3,AUD-TEST-TENANT-A-4,AUD-TEST-TENANT-A-5; counts=1,2,3,4,5; eindeutig=true; streng-monoton=true; format-ok=true",
+      "methode": "logAuditEntry 5x für kanzleiId='TEST-TENANT-A' aufgerufen, IDs auf Eindeutigkeit, streng monotones count (1..5) und Format AUD-{kanzleiId}-{count} geprüft"
+    },
+    {
+      "testfall": "2.6.b Append-only (kein Überschreiben)",
+      "ergebnis": "PASS",
+      "beobachtet": "bestehende-erhalten=true; neue-IDs=AUD-TEST-TENANT-A-4,AUD-TEST-TENANT-A-5; total=5 (erwartet 5); neue-hinzugekommen=true",
+      "methode": "auditLogs mit 3 Einträgen (IDs AUD-TEST-TENANT-A-1,AUD-TEST-TENANT-A-2,AUD-TEST-TENANT-A-3) pre-populated, logAuditEntry 2x aufgerufen, Verifizierung dass 3 bestehende erhalten + 2 neue = total 5"
+    },
+    {
+      "testfall": "2.6.c Migration 20260809 mit kanzleiId die '-' enthält",
+      "ergebnis": "PASS",
+      "beobachtet": "nextAuditId.count=8 (erwartet 8); dataAccessLogs.size=0 (erwartet 0); nextDataAccessId.count=1 (erwartet 1); seed-IDs=AUD-TEST-TENANT-A-1,AUD-TEST-TENANT-A-2,AUD-TEST-TENANT-B-7",
+      "methode": "auditLogs mit 3 Einträgen (IDs enthalten '-' in kanzleiId) pre-populated, migrateAuditCounters aufgerufen, last-segment-Max-Logik verifiziert (max(1,2,7)=7 → +1=8)"
+    },
+    {
+      "testfall": "2.6.d Migration mit leeren auditLogs",
+      "ergebnis": "PASS",
+      "beobachtet": "nextAuditId.count=1 (erwartet 1); dataAccessLogs.size=0 (erwartet 0); nextDataAccessId.count=1 (erwartet 1)",
+      "methode": "migrateAuditCounters mit leerer Map aufgerufen, Default-Werte (count=1, leere dataAccessLogs) verifiziert"
+    },
+    {
+      "testfall": "2.6.e Echter Canister-Upgrade-E2E",
+      "ergebnis": "NOT TESTABLE",
+      "beobachtet": "Echter Canister-Upgrade erfordert neues Build/Deployment — in dieser Umgebung nicht testbar. Migrationlogik und persistierte Zähler wurden funktional verifiziert (Tests 2.6.a-d).",
+      "methode": "Code-Inspection der Migration 20260809_000000.mo + funktionale Replik"
+    }
+  ]
+}

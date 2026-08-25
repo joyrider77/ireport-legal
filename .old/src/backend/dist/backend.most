@@ -1,0 +1,4621 @@
+// Version: 4.0.0
+type AuditLogEntry__1025312952 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__317183390;
+    kanzleiId : KanzleiId__761406786;
+    timestamp : Timestamp__260586903
+  };
+type AuditLogEntry__257644895 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__819000589;
+    kanzleiId : KanzleiId__237136202;
+    timestamp : Timestamp__337815941
+  };
+type AuditLogEntry__303388791 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__207982816;
+    kanzleiId : KanzleiId__448099939;
+    timestamp : Timestamp__259488989
+  };
+type AuditLogEntry__328259428 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__514063202;
+    kanzleiId : KanzleiId__453269121;
+    timestamp : Timestamp__428085620
+  };
+type AuditLogEntry__392082780 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__698447041;
+    kanzleiId : KanzleiId__963881001;
+    timestamp : Timestamp__15064063
+  };
+type AuditLogEntry__404412288 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__319105815;
+    kanzleiId : KanzleiId__912221420;
+    timestamp : Timestamp__61701786
+  };
+type AuditLogEntry__413585016 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__364196337;
+    kanzleiId : KanzleiId__781860675;
+    timestamp : Timestamp__370930425
+  };
+type AuditLogEntry__43439574 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__948651959;
+    kanzleiId : KanzleiId__984198703;
+    timestamp : Timestamp__484678676
+  };
+type AuditLogEntry__467192267 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__805329849;
+    kanzleiId : KanzleiId__677372243;
+    timestamp : Timestamp__439849478
+  };
+type AuditLogEntry__762735027 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__219610058;
+    kanzleiId : KanzleiId__943158718;
+    timestamp : Timestamp__601951716
+  };
+type AuditLogEntry__813785158 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__176736089;
+    kanzleiId : KanzleiId__17752468;
+    timestamp : Timestamp__301639476
+  };
+type AuditLogEntry__856084269 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__442591309;
+    kanzleiId : KanzleiId__104273513;
+    timestamp : Timestamp__327021498
+  };
+type AuditLogEntry__936940897 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__953983423;
+    kanzleiId : KanzleiId__799918750;
+    timestamp : Timestamp__65239024
+  };
+type AuditLogEntry__942437336 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__213073432;
+    kanzleiId : KanzleiId__47081675;
+    timestamp : Timestamp__423555228
+  };
+type AuditLogEntry__990077685 =
+  {
+    action : Text;
+    actorPrincipal : Principal;
+    afterValue : ?Text;
+    beforeValue : ?Text;
+    entityId : Text;
+    entityType : Text;
+    id : AuditLogId__259906035;
+    kanzleiId : KanzleiId__573383471;
+    timestamp : Timestamp__193520280
+  };
+type AuditLogId__176736089 = Text;
+type AuditLogId__207982816 = Text;
+type AuditLogId__213073432 = Text;
+type AuditLogId__219610058 = Text;
+type AuditLogId__259906035 = Text;
+type AuditLogId__317183390 = Text;
+type AuditLogId__319105815 = Text;
+type AuditLogId__364196337 = Text;
+type AuditLogId__442591309 = Text;
+type AuditLogId__514063202 = Text;
+type AuditLogId__698447041 = Text;
+type AuditLogId__805329849 = Text;
+type AuditLogId__819000589 = Text;
+type AuditLogId__948651959 = Text;
+type AuditLogId__953983423 = Text;
+type AuslageId__1069936901 = Text;
+type AuslageId__209264271 = Text;
+type AuslageId__305958721 = Text;
+type AuslageId__354977908 = Text;
+type AuslageId__406671608 = Text;
+type AuslageId__513296397 = Text;
+type AuslageId__542746248 = Text;
+type AuslageId__59845742 = Text;
+type AuslageId__701753482 = Text;
+type AuslageId__718570830 = Text;
+type AuslageId__790552287 = Text;
+type AuslageId__804158485 = Text;
+type AuslageId__823466173 = Text;
+type AuslageId__889668847 = Text;
+type AuslageId__99860264 = Text;
+type Auslage__1009024514 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__601951716;
+    datum : Text;
+    id : AuslageId__804158485;
+    kanzleiId : KanzleiId__943158718;
+    kategorie : AuslagenKategorie__863697437;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__261725170;
+    rechnungId : ?RechnungId__990074158;
+    status : AuslagenStatus__789243248
+  };
+type Auslage__1010266925 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__61701786;
+    datum : Text;
+    id : AuslageId__1069936901;
+    kanzleiId : KanzleiId__912221420;
+    kategorie : AuslagenKategorie__685490853;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__500583101;
+    rechnungId : ?RechnungId__370580315;
+    status : AuslagenStatus__232076132
+  };
+type Auslage__106322231 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__370930425;
+    datum : Text;
+    id : AuslageId__209264271;
+    kanzleiId : KanzleiId__781860675;
+    kategorie : AuslagenKategorie__837076325;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__782916113;
+    rechnungId : ?RechnungId__144675726;
+    status : AuslagenStatus__834000214
+  };
+type Auslage__119198234 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__428085620;
+    datum : Text;
+    id : AuslageId__542746248;
+    kanzleiId : KanzleiId__453269121;
+    kategorie : AuslagenKategorie__653743796;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__921636772;
+    rechnungId : ?RechnungId__209997116;
+    status : AuslagenStatus__302592342
+  };
+type Auslage__257293149 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__15064063;
+    datum : Text;
+    id : AuslageId__305958721;
+    kanzleiId : KanzleiId__963881001;
+    kategorie : AuslagenKategorie__599201906;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__752959618;
+    rechnungId : ?RechnungId__179260019;
+    status : AuslagenStatus__479559494
+  };
+type Auslage__317500749 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__423555228;
+    datum : Text;
+    id : AuslageId__718570830;
+    kanzleiId : KanzleiId__47081675;
+    kategorie : AuslagenKategorie__195947253;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__260337095;
+    rechnungId : ?RechnungId__1017969697;
+    status : AuslagenStatus__129303028
+  };
+type Auslage__337479419 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__193520280;
+    datum : Text;
+    id : AuslageId__823466173;
+    kanzleiId : KanzleiId__573383471;
+    kategorie : AuslagenKategorie__414098895;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__545152619;
+    rechnungId : ?RechnungId__894704366;
+    status : AuslagenStatus__341309106
+  };
+type Auslage__489715444 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__327021498;
+    datum : Text;
+    id : AuslageId__406671608;
+    kanzleiId : KanzleiId__104273513;
+    kategorie : AuslagenKategorie__270276506;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__1024339012;
+    rechnungId : ?RechnungId__829838951;
+    status : AuslagenStatus__520431547
+  };
+type Auslage__499087084 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__301639476;
+    datum : Text;
+    id : AuslageId__513296397;
+    kanzleiId : KanzleiId__17752468;
+    kategorie : AuslagenKategorie__1059880576;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__157897851;
+    rechnungId : ?RechnungId__59301919;
+    status : AuslagenStatus__551085718
+  };
+type Auslage__698754769 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__337815941;
+    datum : Text;
+    id : AuslageId__59845742;
+    kanzleiId : KanzleiId__237136202;
+    kategorie : AuslagenKategorie__240262195;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__379431804;
+    rechnungId : ?RechnungId__220905315;
+    status : AuslagenStatus__979642280
+  };
+type Auslage__726870140 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__65239024;
+    datum : Text;
+    id : AuslageId__701753482;
+    kanzleiId : KanzleiId__799918750;
+    kategorie : AuslagenKategorie__453645588;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__364710086;
+    rechnungId : ?RechnungId__666667225;
+    status : AuslagenStatus__573384606
+  };
+type Auslage__745210221 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__484678676;
+    datum : Text;
+    id : AuslageId__99860264;
+    kanzleiId : KanzleiId__984198703;
+    kategorie : AuslagenKategorie__901524973;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__557396966;
+    rechnungId : ?RechnungId__885554351;
+    status : AuslagenStatus__954681877
+  };
+type Auslage__896388406 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__260586903;
+    datum : Text;
+    id : AuslageId__889668847;
+    kanzleiId : KanzleiId__761406786;
+    kategorie : AuslagenKategorie__1042023854;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__547624938;
+    rechnungId : ?RechnungId__771898738;
+    status : AuslagenStatus__839041920
+  };
+type Auslage__938558860 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__259488989;
+    datum : Text;
+    id : AuslageId__354977908;
+    kanzleiId : KanzleiId__448099939;
+    kategorie : AuslagenKategorie__584397635;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__627202674;
+    rechnungId : ?RechnungId__483722454;
+    status : AuslagenStatus__1045604302
+  };
+type Auslage__968686381 =
+  {
+    beschreibung : Text;
+    betrag : Nat;
+    createdAt : Timestamp__439849478;
+    datum : Text;
+    id : AuslageId__790552287;
+    kanzleiId : KanzleiId__677372243;
+    kategorie : AuslagenKategorie__734906014;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__214293905;
+    rechnungId : ?RechnungId__378121226;
+    status : AuslagenStatus__507966232
+  };
+type AuslagenKategorie__1042023854 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__1059880576 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__195947253 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__240262195 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__270276506 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__414098895 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__453645588 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__584397635 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__599201906 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__653743796 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__685490853 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__734906014 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__837076325 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__863697437 = {#andere; #kopien; #porto; #reise};
+type AuslagenKategorie__901524973 = {#andere; #kopien; #porto; #reise};
+type AuslagenStatus__1045604302 = {#offen; #verrechnet};
+type AuslagenStatus__129303028 = {#offen; #verrechnet};
+type AuslagenStatus__232076132 = {#offen; #verrechnet};
+type AuslagenStatus__302592342 = {#offen; #verrechnet};
+type AuslagenStatus__341309106 = {#offen; #verrechnet};
+type AuslagenStatus__479559494 = {#offen; #verrechnet};
+type AuslagenStatus__507966232 = {#offen; #verrechnet};
+type AuslagenStatus__520431547 = {#offen; #verrechnet};
+type AuslagenStatus__551085718 = {#offen; #verrechnet};
+type AuslagenStatus__573384606 = {#offen; #verrechnet};
+type AuslagenStatus__789243248 = {#offen; #verrechnet};
+type AuslagenStatus__834000214 = {#offen; #verrechnet};
+type AuslagenStatus__839041920 = {#offen; #verrechnet};
+type AuslagenStatus__954681877 = {#offen; #verrechnet};
+type AuslagenStatus__979642280 = {#offen; #verrechnet};
+type Auslagenregelung__135391733 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__209543243 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__337044678 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__35136559 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__390669432 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__437831892 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__441903405 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__573643635 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__612493128 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__706117307 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__74446768 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__751387539 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__777844107 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__961601957 = {#Effektiv; #Keine; #Pauschal};
+type Auslagenregelung__971120120 = {#Effektiv; #Keine; #Pauschal};
+type ConsentId__1028025852 = Text;
+type ConsentId__120598791 = Text;
+type ConsentId__190989927 = Text;
+type ConsentId__21846978 = Text;
+type ConsentId__236366967 = Text;
+type ConsentId__267478287 = Text;
+type ConsentId__528994940 = Text;
+type ConsentId__550416514 = Text;
+type ConsentId__57258093 = Text;
+type ConsentId__714382364 = Text;
+type ConsentId__844197653 = Text;
+type ConsentId__862895455 = Text;
+type ConsentId__875556008 = Text;
+type ConsentId__878609714 = Text;
+type ConsentId__881358910 = Text;
+type ConsentRecord__1053459785 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__190989927;
+    kanzleiId : KanzleiId__677372243;
+    klientId : KlientId__44146836;
+    principal : Principal;
+    timestamp : Timestamp__439849478
+  };
+type ConsentRecord__1072480170 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__714382364;
+    kanzleiId : KanzleiId__984198703;
+    klientId : KlientId__215014776;
+    principal : Principal;
+    timestamp : Timestamp__484678676
+  };
+type ConsentRecord__113372627 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__21846978;
+    kanzleiId : KanzleiId__912221420;
+    klientId : KlientId__522434133;
+    principal : Principal;
+    timestamp : Timestamp__61701786
+  };
+type ConsentRecord__143575063 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__878609714;
+    kanzleiId : KanzleiId__237136202;
+    klientId : KlientId__600987889;
+    principal : Principal;
+    timestamp : Timestamp__337815941
+  };
+type ConsentRecord__216343135 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__267478287;
+    kanzleiId : KanzleiId__448099939;
+    klientId : KlientId__850505425;
+    principal : Principal;
+    timestamp : Timestamp__259488989
+  };
+type ConsentRecord__302164963 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__844197653;
+    kanzleiId : KanzleiId__799918750;
+    klientId : KlientId__558411222;
+    principal : Principal;
+    timestamp : Timestamp__65239024
+  };
+type ConsentRecord__341403933 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__120598791;
+    kanzleiId : KanzleiId__761406786;
+    klientId : KlientId__1006497231;
+    principal : Principal;
+    timestamp : Timestamp__260586903
+  };
+type ConsentRecord__474437839 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__528994940;
+    kanzleiId : KanzleiId__104273513;
+    klientId : KlientId__528097443;
+    principal : Principal;
+    timestamp : Timestamp__327021498
+  };
+type ConsentRecord__479258025 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__881358910;
+    kanzleiId : KanzleiId__943158718;
+    klientId : KlientId__806221932;
+    principal : Principal;
+    timestamp : Timestamp__601951716
+  };
+type ConsentRecord__581408675 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__57258093;
+    kanzleiId : KanzleiId__47081675;
+    klientId : KlientId__62773025;
+    principal : Principal;
+    timestamp : Timestamp__423555228
+  };
+type ConsentRecord__602561336 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__862895455;
+    kanzleiId : KanzleiId__963881001;
+    klientId : KlientId__702946769;
+    principal : Principal;
+    timestamp : Timestamp__15064063
+  };
+type ConsentRecord__673060467 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__1028025852;
+    kanzleiId : KanzleiId__573383471;
+    klientId : KlientId__770817176;
+    principal : Principal;
+    timestamp : Timestamp__193520280
+  };
+type ConsentRecord__689329226 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__875556008;
+    kanzleiId : KanzleiId__17752468;
+    klientId : KlientId__287765035;
+    principal : Principal;
+    timestamp : Timestamp__301639476
+  };
+type ConsentRecord__826058260 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__550416514;
+    kanzleiId : KanzleiId__781860675;
+    klientId : KlientId__365782658;
+    principal : Principal;
+    timestamp : Timestamp__370930425
+  };
+type ConsentRecord__952238669 =
+  {
+    consentGiven : Bool;
+    dsgVersion : Text;
+    id : ConsentId__236366967;
+    kanzleiId : KanzleiId__453269121;
+    klientId : KlientId__711788489;
+    principal : Principal;
+    timestamp : Timestamp__428085620
+  };
+type DataAccessAction__151617099 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__215675457 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__265555221 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__591119996 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__660936440 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__684472423 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__716853018 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__736439085 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__750668324 = {#lesen; #loeschen; #schreiben};
+type DataAccessAction__767492359 = {#lesen; #loeschen; #schreiben};
+type DataAccessLog__1011043610 =
+  {
+    action : DataAccessAction__767492359;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__32714339;
+    kanzleiId : KanzleiId__912221420;
+    timestamp : Timestamp__61701786
+  };
+type DataAccessLog__104074890 =
+  {
+    action : DataAccessAction__716853018;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__226749434;
+    kanzleiId : KanzleiId__963881001;
+    timestamp : Timestamp__15064063
+  };
+type DataAccessLog__1055846002 =
+  {
+    action : DataAccessAction__684472423;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__306110559;
+    kanzleiId : KanzleiId__573383471;
+    timestamp : Timestamp__193520280
+  };
+type DataAccessLog__292667932 =
+  {
+    action : DataAccessAction__750668324;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__537991787;
+    kanzleiId : KanzleiId__799918750;
+    timestamp : Timestamp__65239024
+  };
+type DataAccessLog__485033180 =
+  {
+    action : DataAccessAction__265555221;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__398484382;
+    kanzleiId : KanzleiId__448099939;
+    timestamp : Timestamp__259488989
+  };
+type DataAccessLog__495174646 =
+  {
+    action : DataAccessAction__660936440;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__491374805;
+    kanzleiId : KanzleiId__104273513;
+    timestamp : Timestamp__327021498
+  };
+type DataAccessLog__499336734 =
+  {
+    action : DataAccessAction__151617099;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__124975139;
+    kanzleiId : KanzleiId__677372243;
+    timestamp : Timestamp__439849478
+  };
+type DataAccessLog__637312154 =
+  {
+    action : DataAccessAction__736439085;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__361731926;
+    kanzleiId : KanzleiId__781860675;
+    timestamp : Timestamp__370930425
+  };
+type DataAccessLog__80121122 =
+  {
+    action : DataAccessAction__215675457;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__12668153;
+    kanzleiId : KanzleiId__984198703;
+    timestamp : Timestamp__484678676
+  };
+type DataAccessLog__890221701 =
+  {
+    action : DataAccessAction__591119996;
+    actorPrincipal : Principal;
+    dataType : Text;
+    entityId : Text;
+    id : DatenschutzId__932739956;
+    kanzleiId : KanzleiId__17752468;
+    timestamp : Timestamp__301639476
+  };
+type Data__265875254<K, V> = {var count : Nat__58649523; kvs : [var ?(K, V)]};
+type DatenschutzId__124975139 = Text;
+type DatenschutzId__12668153 = Text;
+type DatenschutzId__226749434 = Text;
+type DatenschutzId__306110559 = Text;
+type DatenschutzId__32714339 = Text;
+type DatenschutzId__361731926 = Text;
+type DatenschutzId__398484382 = Text;
+type DatenschutzId__491374805 = Text;
+type DatenschutzId__537991787 = Text;
+type DatenschutzId__932739956 = Text;
+type ExternalBlob__220559234 = Blob;
+type GridArea__1020353757 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__201591569 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__246234798 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__794772360 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__860389205 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__864264936 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__892402996 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__925310703 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type GridArea__957265915 =
+  {col : Nat; colSpan : Nat; row : Nat; rowSpan : Nat};
+type Internal__161573640<K, V> =
+  {children : [var ?Node__430031793<K, V>]; data : Data__265875254<K, V>};
+type InviteToken__13740555 =
+  {
+    createdAt : Timestamp__61701786;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__912221420;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__150681772 =
+  {
+    createdAt : Timestamp__15064063;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__963881001;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__183354236 =
+  {
+    createdAt : Timestamp__65239024;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__799918750;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__309976853 =
+  {
+    createdAt : Timestamp__260586903;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__761406786;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__379082348 =
+  {
+    createdAt : Timestamp__370930425;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__781860675;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__477868674 =
+  {
+    createdAt : Timestamp__439849478;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__677372243;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__539282515 =
+  {
+    createdAt : Timestamp__601951716;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__943158718;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__555695214 =
+  {
+    createdAt : Timestamp__423555228;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__47081675;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__579721920 =
+  {
+    createdAt : Timestamp__301639476;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__17752468;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__723349324 =
+  {
+    createdAt : Timestamp__327021498;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__104273513;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__758354029 =
+  {
+    createdAt : Timestamp__193520280;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__573383471;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__789761563 =
+  {
+    createdAt : Timestamp__337815941;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__237136202;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__79310674 =
+  {
+    createdAt : Timestamp__259488989;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__448099939;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__931507763 =
+  {
+    createdAt : Timestamp__428085620;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__453269121;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type InviteToken__954665523 =
+  {
+    createdAt : Timestamp__484678676;
+    createdBy : Principal;
+    email : Text;
+    kanzleiId : KanzleiId__984198703;
+    redeemedBy : ?Principal;
+    token : Text
+  };
+type KanzleiId__104273513 = Text;
+type KanzleiId__17752468 = Text;
+type KanzleiId__237136202 = Text;
+type KanzleiId__448099939 = Text;
+type KanzleiId__453269121 = Text;
+type KanzleiId__47081675 = Text;
+type KanzleiId__573383471 = Text;
+type KanzleiId__677372243 = Text;
+type KanzleiId__761406786 = Text;
+type KanzleiId__781860675 = Text;
+type KanzleiId__799918750 = Text;
+type KanzleiId__912221420 = Text;
+type KanzleiId__943158718 = Text;
+type KanzleiId__963881001 = Text;
+type KanzleiId__984198703 = Text;
+type KanzleiStammdaten__1016343392 =
+  {
+    email : Text;
+    kanzleiLogoBlob : ?Blob;
+    kanzleiname : Text;
+    land : Text;
+    mwstNr : Text;
+    ort : Text;
+    plz : Text;
+    strasseHausnummer : Text;
+    telefon : Text;
+    uid : Text;
+    website : Text
+  };
+type KanzleiStammdaten__261744942 =
+  {
+    email : Text;
+    kanzleiLogoBlob : ?Blob;
+    kanzleiname : Text;
+    land : Text;
+    mwstNr : Text;
+    ort : Text;
+    plz : Text;
+    strasseHausnummer : Text;
+    telefon : Text;
+    uid : Text;
+    website : Text
+  };
+type KanzleiStammdaten__379897000 =
+  {
+    email : Text;
+    kanzleiLogoBlob : ?Blob;
+    kanzleiname : Text;
+    land : Text;
+    mwstNr : Text;
+    ort : Text;
+    plz : Text;
+    strasseHausnummer : Text;
+    telefon : Text;
+    uid : Text;
+    website : Text
+  };
+type KanzleiStammdaten__41976489 =
+  {
+    email : Text;
+    kanzleiLogoBlob : ?Blob;
+    kanzleiname : Text;
+    land : Text;
+    mwstNr : Text;
+    ort : Text;
+    plz : Text;
+    strasseHausnummer : Text;
+    telefon : Text;
+    uid : Text;
+    website : Text
+  };
+type Kanzlei__1059257044 =
+  {
+    createdAt : Timestamp__327021498;
+    defaultStundensatz : Nat;
+    id : KanzleiId__104273513;
+    name : Text;
+    stammdaten : ?KanzleiStammdaten__1016343392;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__367262598
+  };
+type Kanzlei__202190017 =
+  {
+    createdAt : Timestamp__260586903;
+    defaultStundensatz : Nat;
+    id : KanzleiId__761406786;
+    name : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__855138218
+  };
+type Kanzlei__27760289 =
+  {
+    createdAt : Timestamp__601951716;
+    defaultStundensatz : Nat;
+    id : KanzleiId__943158718;
+    name : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__779221736
+  };
+type Kanzlei__419390637 =
+  {
+    createdAt : Timestamp__15064063;
+    defaultStundensatz : Nat;
+    id : KanzleiId__963881001;
+    name : Text;
+    stammdaten : ?KanzleiStammdaten__261744942;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__598637363
+  };
+type Kanzlei__572998989 =
+  {
+    createdAt : Timestamp__337815941;
+    defaultStundensatz : Nat;
+    id : KanzleiId__237136202;
+    name : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__572241424
+  };
+type Kanzlei__701653872 =
+  {
+    createdAt : Timestamp__301639476;
+    defaultStundensatz : Nat;
+    id : KanzleiId__17752468;
+    name : Text;
+    stammdaten : ?KanzleiStammdaten__41976489;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__401249149
+  };
+type Kanzlei__971734846 =
+  {
+    createdAt : Timestamp__428085620;
+    defaultStundensatz : Nat;
+    id : KanzleiId__453269121;
+    name : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__281289695
+  };
+type KlientId__1006497231 = Text;
+type KlientId__215014776 = Text;
+type KlientId__287765035 = Text;
+type KlientId__365782658 = Text;
+type KlientId__44146836 = Text;
+type KlientId__522434133 = Text;
+type KlientId__528097443 = Text;
+type KlientId__558411222 = Text;
+type KlientId__600987889 = Text;
+type KlientId__62773025 = Text;
+type KlientId__702946769 = Text;
+type KlientId__711788489 = Text;
+type KlientId__770817176 = Text;
+type KlientId__806221932 = Text;
+type KlientId__850505425 = Text;
+type Klient__1007169812 =
+  {
+    createdAt : Timestamp__423555228;
+    email : Text;
+    id : KlientId__62773025;
+    kanzleiId : KanzleiId__47081675;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__1046366391 =
+  {
+    createdAt : Timestamp__260586903;
+    email : Text;
+    id : KlientId__1006497231;
+    kanzleiId : KanzleiId__761406786;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__160959864 =
+  {
+    createdAt : Timestamp__327021498;
+    email : Text;
+    id : KlientId__528097443;
+    kanzleiId : KanzleiId__104273513;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__173588667 =
+  {
+    createdAt : Timestamp__259488989;
+    email : Text;
+    id : KlientId__850505425;
+    kanzleiId : KanzleiId__448099939;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__188375859 =
+  {
+    createdAt : Timestamp__193520280;
+    email : Text;
+    id : KlientId__770817176;
+    kanzleiId : KanzleiId__573383471;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__298379104 =
+  {
+    createdAt : Timestamp__61701786;
+    email : Text;
+    id : KlientId__522434133;
+    kanzleiId : KanzleiId__912221420;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__306969773 =
+  {
+    createdAt : Timestamp__428085620;
+    email : Text;
+    id : KlientId__711788489;
+    kanzleiId : KanzleiId__453269121;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__323026711 =
+  {
+    createdAt : Timestamp__439849478;
+    email : Text;
+    id : KlientId__44146836;
+    kanzleiId : KanzleiId__677372243;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__399098318 =
+  {
+    createdAt : Timestamp__484678676;
+    email : Text;
+    id : KlientId__215014776;
+    kanzleiId : KanzleiId__984198703;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__60237789 =
+  {
+    createdAt : Timestamp__15064063;
+    email : Text;
+    id : KlientId__702946769;
+    kanzleiId : KanzleiId__963881001;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__624082035 =
+  {
+    createdAt : Timestamp__301639476;
+    email : Text;
+    id : KlientId__287765035;
+    kanzleiId : KanzleiId__17752468;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__661087952 =
+  {
+    createdAt : Timestamp__337815941;
+    email : Text;
+    id : KlientId__600987889;
+    kanzleiId : KanzleiId__237136202;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__722130131 =
+  {
+    createdAt : Timestamp__601951716;
+    email : Text;
+    id : KlientId__806221932;
+    kanzleiId : KanzleiId__943158718;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__795774275 =
+  {
+    createdAt : Timestamp__65239024;
+    email : Text;
+    id : KlientId__558411222;
+    kanzleiId : KanzleiId__799918750;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type Klient__914489132 =
+  {
+    createdAt : Timestamp__370930425;
+    email : Text;
+    id : KlientId__365782658;
+    kanzleiId : KanzleiId__781860675;
+    name : Text;
+    plzOrt : Text;
+    strasse : Text;
+    telefon : Text
+  };
+type LayoutElementId__294101036 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #schlusstext;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElementId__323189274 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElementId__324741056 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElementId__343807863 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #schlusstext;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElementId__6847474 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElementId__69670023 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #schlusstext;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElementId__905255866 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #schlusstext;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type LayoutElement__356125410 =
+  {
+    alignment : ?Position__1010551551;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__201591569;
+    heightMm : ?Float;
+    id : LayoutElementId__294101036;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type LayoutElement__576786259 =
+  {
+    alignment : ?Position__594833854;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__794772360;
+    heightMm : ?Float;
+    id : LayoutElementId__905255866;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type LayoutElement__608633910 =
+  {
+    alignment : ?Position__116500658;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__864264936;
+    heightMm : ?Float;
+    id : LayoutElementId__343807863;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type LayoutElement__678094933 =
+  {
+    alignment : ?Position__548280551;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__246234798;
+    heightMm : ?Float;
+    id : LayoutElementId__69670023;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type LayoutElement__820645463 =
+  {
+    alignment : ?Position__838640837;
+    gridArea : GridArea__860389205;
+    id : LayoutElementId__323189274;
+    order : Nat;
+    visible : Bool
+  };
+type Leaf__1045638083<K, V> = {data : Data__265875254<K, V>};
+type LeistungId__173072307 = Text;
+type LeistungId__244652742 = Text;
+type LeistungId__253757463 = Text;
+type LeistungId__258696945 = Text;
+type LeistungId__304662582 = Text;
+type LeistungId__334576374 = Text;
+type LeistungId__362298552 = Text;
+type LeistungId__376303229 = Text;
+type LeistungId__416836739 = Text;
+type LeistungId__453109421 = Text;
+type LeistungId__68487648 = Text;
+type LeistungId__734834070 = Text;
+type LeistungId__75917886 = Text;
+type LeistungId__824737745 = Text;
+type LeistungId__875015761 = Text;
+type LeistungStatus__142907412 = {#offen; #verrechnet};
+type LeistungStatus__156866435 = {#offen; #verrechnet};
+type LeistungStatus__195457795 = {#offen; #verrechnet};
+type LeistungStatus__23172114 = {#offen; #verrechnet};
+type LeistungStatus__324261141 = {#offen; #verrechnet};
+type LeistungStatus__380962011 = {#offen; #verrechnet};
+type LeistungStatus__394769001 = {#offen; #verrechnet};
+type LeistungStatus__447880439 = {#offen; #verrechnet};
+type LeistungStatus__622668029 = {#offen; #verrechnet};
+type LeistungStatus__836410279 = {#offen; #verrechnet};
+type LeistungStatus__8446184 = {#offen; #verrechnet};
+type LeistungStatus__878090000 = {#offen; #verrechnet};
+type LeistungStatus__903704212 = {#offen; #verrechnet};
+type LeistungStatus__909300832 = {#offen; #verrechnet};
+type LeistungStatus__91996446 = {#offen; #verrechnet};
+type Leistung__112830575 =
+  {
+    createdAt : Timestamp__423555228;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__253757463;
+    kanzleiId : KanzleiId__47081675;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__260337095;
+    rechnungId : ?RechnungId__1017969697;
+    status : LeistungStatus__23172114;
+    taetigkeit : Text
+  };
+type Leistung__274111735 =
+  {
+    createdAt : Timestamp__260586903;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__173072307;
+    kanzleiId : KanzleiId__761406786;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__547624938;
+    rechnungId : ?RechnungId__771898738;
+    status : LeistungStatus__878090000;
+    taetigkeit : Text
+  };
+type Leistung__347095034 =
+  {
+    createdAt : Timestamp__370930425;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__416836739;
+    kanzleiId : KanzleiId__781860675;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__782916113;
+    rechnungId : ?RechnungId__144675726;
+    status : LeistungStatus__8446184;
+    taetigkeit : Text
+  };
+type Leistung__43981733 =
+  {
+    createdAt : Timestamp__15064063;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__244652742;
+    kanzleiId : KanzleiId__963881001;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__752959618;
+    rechnungId : ?RechnungId__179260019;
+    status : LeistungStatus__447880439;
+    taetigkeit : Text
+  };
+type Leistung__452886939 =
+  {
+    createdAt : Timestamp__65239024;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__334576374;
+    kanzleiId : KanzleiId__799918750;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__364710086;
+    rechnungId : ?RechnungId__666667225;
+    status : LeistungStatus__394769001;
+    taetigkeit : Text
+  };
+type Leistung__48560400 =
+  {
+    createdAt : Timestamp__439849478;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__824737745;
+    kanzleiId : KanzleiId__677372243;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__214293905;
+    rechnungId : ?RechnungId__378121226;
+    status : LeistungStatus__142907412;
+    taetigkeit : Text
+  };
+type Leistung__50529594 =
+  {
+    createdAt : Timestamp__327021498;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__453109421;
+    kanzleiId : KanzleiId__104273513;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__1024339012;
+    rechnungId : ?RechnungId__829838951;
+    status : LeistungStatus__324261141;
+    taetigkeit : Text
+  };
+type Leistung__516484878 =
+  {
+    createdAt : Timestamp__428085620;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__875015761;
+    kanzleiId : KanzleiId__453269121;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__921636772;
+    rechnungId : ?RechnungId__209997116;
+    status : LeistungStatus__91996446;
+    taetigkeit : Text
+  };
+type Leistung__574896089 =
+  {
+    createdAt : Timestamp__601951716;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__734834070;
+    kanzleiId : KanzleiId__943158718;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__261725170;
+    rechnungId : ?RechnungId__990074158;
+    status : LeistungStatus__903704212;
+    taetigkeit : Text
+  };
+type Leistung__605390659 =
+  {
+    createdAt : Timestamp__193520280;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__304662582;
+    kanzleiId : KanzleiId__573383471;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__545152619;
+    rechnungId : ?RechnungId__894704366;
+    status : LeistungStatus__156866435;
+    taetigkeit : Text
+  };
+type Leistung__683715547 =
+  {
+    createdAt : Timestamp__301639476;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__258696945;
+    kanzleiId : KanzleiId__17752468;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__157897851;
+    rechnungId : ?RechnungId__59301919;
+    status : LeistungStatus__836410279;
+    taetigkeit : Text
+  };
+type Leistung__736934141 =
+  {
+    createdAt : Timestamp__484678676;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__68487648;
+    kanzleiId : KanzleiId__984198703;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__557396966;
+    rechnungId : ?RechnungId__885554351;
+    status : LeistungStatus__380962011;
+    taetigkeit : Text
+  };
+type Leistung__771087342 =
+  {
+    createdAt : Timestamp__259488989;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__376303229;
+    kanzleiId : KanzleiId__448099939;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__627202674;
+    rechnungId : ?RechnungId__483722454;
+    status : LeistungStatus__909300832;
+    taetigkeit : Text
+  };
+type Leistung__82263532 =
+  {
+    createdAt : Timestamp__61701786;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__362298552;
+    kanzleiId : KanzleiId__912221420;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__500583101;
+    rechnungId : ?RechnungId__370580315;
+    status : LeistungStatus__195457795;
+    taetigkeit : Text
+  };
+type Leistung__905873088 =
+  {
+    createdAt : Timestamp__337815941;
+    datum : Text;
+    dauer : Nat;
+    honorar : Nat;
+    id : LeistungId__75917886;
+    kanzleiId : KanzleiId__237136202;
+    leistungserbringerId : Principal;
+    mandatId : MandatId__379431804;
+    rechnungId : ?RechnungId__220905315;
+    status : LeistungStatus__622668029;
+    taetigkeit : Text
+  };
+type Leistungserbringer__16426165 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__799918750;
+    nachname : Text;
+    registeredAt : Timestamp__65239024;
+    role : ?Role__155501100;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__317410492];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__331911064 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__453269121;
+    nachname : Text;
+    registeredAt : Timestamp__428085620;
+    role : ?Role__890054381;
+    status : Text;
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__502383219 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__943158718;
+    nachname : Text;
+    registeredAt : Timestamp__601951716;
+    role : ?Role__848519021;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__659329614];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__526483097 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__573383471;
+    nachname : Text;
+    registeredAt : Timestamp__193520280;
+    role : ?Role__686600149;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__517612760];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__550861529 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__237136202;
+    nachname : Text;
+    registeredAt : Timestamp__337815941;
+    role : ?Role__403959311;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__635044316];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__550977327 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__761406786;
+    nachname : Text;
+    registeredAt : Timestamp__260586903;
+    role : ?Role__525729681;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__300460634];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__658477108 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__104273513;
+    nachname : Text;
+    registeredAt : Timestamp__327021498;
+    role : ?Role__903893475;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__885844530];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__661160419 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__963881001;
+    nachname : Text;
+    registeredAt : Timestamp__15064063;
+    role : ?Role__634780074;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__964934152];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__684236193 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__912221420;
+    nachname : Text;
+    registeredAt : Timestamp__61701786;
+    role : ?Role__555697920;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__152838218];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__690498575 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__984198703;
+    nachname : Text;
+    registeredAt : Timestamp__484678676;
+    role : ?Role__371922142;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__677539585];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__915577057 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__47081675;
+    nachname : Text;
+    registeredAt : Timestamp__423555228;
+    role : ?Role__706760474;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__313431936];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__932799556 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__677372243;
+    nachname : Text;
+    registeredAt : Timestamp__439849478;
+    role : ?Role__1033530364;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__123234049];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__961962353 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__448099939;
+    nachname : Text;
+    registeredAt : Timestamp__259488989;
+    role : ?Role__975053785;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__663083162];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__978731158 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__781860675;
+    nachname : Text;
+    registeredAt : Timestamp__370930425;
+    role : ?Role__530298872;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__971806020];
+    titel : Text;
+    vorname : Text
+  };
+type Leistungserbringer__996978350 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__17752468;
+    nachname : Text;
+    registeredAt : Timestamp__301639476;
+    role : ?Role__304792061;
+    status : Text;
+    statusHistory : [StatusHistoryEntry__562544982];
+    titel : Text;
+    vorname : Text
+  };
+type MandatId__1024339012 = Text;
+type MandatId__157897851 = Text;
+type MandatId__214293905 = Text;
+type MandatId__260337095 = Text;
+type MandatId__261725170 = Text;
+type MandatId__364710086 = Text;
+type MandatId__379431804 = Text;
+type MandatId__500583101 = Text;
+type MandatId__545152619 = Text;
+type MandatId__547624938 = Text;
+type MandatId__557396966 = Text;
+type MandatId__627202674 = Text;
+type MandatId__752959618 = Text;
+type MandatId__782916113 = Text;
+type MandatId__921636772 = Text;
+type MandatStatus__213930202 = {#aktiv; #archiviert};
+type MandatStatus__262661546 = {#aktiv; #archiviert};
+type MandatStatus__265974008 = {#aktiv; #archiviert};
+type MandatStatus__323899848 = {#aktiv; #archiviert};
+type MandatStatus__327995706 = {#aktiv; #archiviert};
+type MandatStatus__330102115 = {#aktiv; #archiviert};
+type MandatStatus__449764508 = {#aktiv; #archiviert};
+type MandatStatus__533055232 = {#aktiv; #archiviert};
+type MandatStatus__551087723 = {#aktiv; #archiviert};
+type MandatStatus__594696923 = {#aktiv; #archiviert};
+type MandatStatus__610822362 = {#aktiv; #archiviert};
+type MandatStatus__670305117 = {#aktiv; #archiviert};
+type MandatStatus__701253606 = {#aktiv; #archiviert};
+type MandatStatus__796865557 = {#aktiv; #archiviert};
+type MandatStatus__798484712 = {#aktiv; #archiviert};
+type Mandat__1007423737 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__437831892;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__484678676;
+    id : MandatId__557396966;
+    kanzleiId : KanzleiId__984198703;
+    klientId : KlientId__215014776;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__670305117;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__141338283 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__135391733;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__61701786;
+    id : MandatId__500583101;
+    kanzleiId : KanzleiId__912221420;
+    klientId : KlientId__522434133;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__449764508;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__164316579 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__706117307;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__15064063;
+    id : MandatId__752959618;
+    kanzleiId : KanzleiId__963881001;
+    klientId : KlientId__702946769;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__551087723;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__262136200 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__35136559;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__423555228;
+    id : MandatId__260337095;
+    kanzleiId : KanzleiId__47081675;
+    klientId : KlientId__62773025;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__796865557;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__424218000 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__74446768;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__601951716;
+    id : MandatId__261725170;
+    kanzleiId : KanzleiId__943158718;
+    klientId : KlientId__806221932;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__798484712;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__454054521 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__441903405;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__193520280;
+    id : MandatId__545152619;
+    kanzleiId : KanzleiId__573383471;
+    klientId : KlientId__770817176;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__610822362;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__46491840 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__612493128;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__439849478;
+    id : MandatId__214293905;
+    kanzleiId : KanzleiId__677372243;
+    klientId : KlientId__44146836;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__533055232;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__488315977 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__209543243;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__370930425;
+    id : MandatId__782916113;
+    kanzleiId : KanzleiId__781860675;
+    klientId : KlientId__365782658;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__213930202;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__545918421 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__971120120;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__260586903;
+    id : MandatId__547624938;
+    kanzleiId : KanzleiId__761406786;
+    klientId : KlientId__1006497231;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__265974008;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__571702722 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__573643635;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__428085620;
+    id : MandatId__921636772;
+    kanzleiId : KanzleiId__453269121;
+    klientId : KlientId__711788489;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__330102115;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__623949770 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__961601957;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__259488989;
+    id : MandatId__627202674;
+    kanzleiId : KanzleiId__448099939;
+    klientId : KlientId__850505425;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__323899848;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__727318983 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__390669432;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__65239024;
+    id : MandatId__364710086;
+    kanzleiId : KanzleiId__799918750;
+    klientId : KlientId__558411222;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__594696923;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__760590090 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__751387539;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__301639476;
+    id : MandatId__157897851;
+    kanzleiId : KanzleiId__17752468;
+    klientId : KlientId__287765035;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__701253606;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Mandat__961656280 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__777844107;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__327021498;
+    id : MandatId__1024339012;
+    kanzleiId : KanzleiId__104273513;
+    klientId : KlientId__528097443;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__262661546;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type Map__13625999<K, V> =
+  {var root : Node__430031793<K, V>; var size : Nat__58649523};
+type Map__386906547<K, V> = Map__670138087<K, V>;
+type Map__670138087<K, V> = Map__13625999<K, V>;
+type Nat__58649523 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__151502346 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__953983423, AuditLogEntry__936940897>;
+    auslagen : Map__386906547<AuslageId__701753482, Auslage__726870140>;
+    consentRecords :
+      Map__386906547<ConsentId__844197653, ConsentRecord__302164963>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__537991787, DataAccessLog__292667932>;
+    inviteTokens : Map__386906547<Text, InviteToken__183354236>;
+    kanzleien : Map__386906547<KanzleiId__799918750, NewKanzlei__313237643>;
+    klienten : Map__386906547<KlientId__558411222, Klient__795774275>;
+    leistungen : Map__386906547<LeistungId__334576374, Leistung__452886939>;
+    mandate : Map__386906547<MandatId__364710086, Mandat__727318983>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__666667225, Rechnung__97840762>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__799918750, NewRechnungsvorlage__956509106>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__881682407>;
+    users : Map__386906547<Principal, Leistungserbringer__16426165>;
+    zahlungen : Map__386906547<ZahlungId__905846893, Zahlung__502590660>
+  };
+type NewActor__428139878 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__319105815, AuditLogEntry__404412288>;
+    auslagen : Map__386906547<AuslageId__1069936901, Auslage__1010266925>;
+    consentRecords :
+      Map__386906547<ConsentId__21846978, ConsentRecord__113372627>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__32714339, DataAccessLog__1011043610>;
+    inviteTokens : Map__386906547<Text, InviteToken__13740555>;
+    kanzleien : Map__386906547<KanzleiId__912221420, NewKanzlei__425530180>;
+    klienten : Map__386906547<KlientId__522434133, Klient__298379104>;
+    leistungen : Map__386906547<LeistungId__362298552, Leistung__82263532>;
+    mandate : Map__386906547<MandatId__500583101, Mandat__141338283>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__370580315, Rechnung__11473634>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__912221420, Rechnungsvorlage__745210498>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__104005754>;
+    users : Map__386906547<Principal, Leistungserbringer__684236193>;
+    zahlungen : Map__386906547<ZahlungId__711121604, Zahlung__41073849>
+  };
+type NewActor__465547207 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__219610058, AuditLogEntry__762735027>;
+    auslagen : Map__386906547<AuslageId__804158485, Auslage__1009024514>;
+    consentRecords :
+      Map__386906547<ConsentId__881358910, ConsentRecord__479258025>;
+    inviteTokens : Map__386906547<Text, InviteToken__539282515>;
+    kanzleien : Map__386906547<KanzleiId__943158718, Kanzlei__27760289>;
+    klienten : Map__386906547<KlientId__806221932, Klient__722130131>;
+    leistungen : Map__386906547<LeistungId__734834070, Leistung__574896089>;
+    mandate : Map__386906547<MandatId__261725170, Mandat__424218000>;
+    rechnungen : Map__386906547<RechnungId__990074158, Rechnung__447049399>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__943158718, Rechnungsvorlage__727648171>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__505225803>;
+    users : Map__386906547<Principal, Leistungserbringer__502383219>;
+    zahlungen : Map__386906547<ZahlungId__952665745, Zahlung__1047641295>
+  };
+type NewActor__506843142 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__442591309, AuditLogEntry__856084269>;
+    auslagen : Map__386906547<AuslageId__406671608, Auslage__489715444>;
+    consentRecords :
+      Map__386906547<ConsentId__528994940, ConsentRecord__474437839>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__491374805, DataAccessLog__495174646>;
+    inviteTokens : Map__386906547<Text, InviteToken__723349324>;
+    kanzleien : Map__386906547<KanzleiId__104273513, Kanzlei__1059257044>;
+    klienten : Map__386906547<KlientId__528097443, Klient__160959864>;
+    leistungen : Map__386906547<LeistungId__453109421, Leistung__50529594>;
+    mandate : Map__386906547<MandatId__1024339012, Mandat__961656280>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    nextSupportConversationId : {var count : Nat};
+    nextSupportMessageId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__829838951, Rechnung__631353356>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__104273513, Rechnungsvorlage__292002309>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__526668750>;
+    supportConversations :
+      Map__386906547<SupportConversationId__327574235,
+                      SupportConversation__831183193>;
+    supportMessages :
+      Map__386906547<SupportMessageId__899356409, SupportMessage__659546118>;
+    users : Map__386906547<Principal, Leistungserbringer__658477108>;
+    zahlungen : Map__386906547<ZahlungId__271366872, Zahlung__202752787>
+  };
+type NewActor__521712192 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__259906035, AuditLogEntry__990077685>;
+    auslagen : Map__386906547<AuslageId__823466173, Auslage__337479419>;
+    consentRecords :
+      Map__386906547<ConsentId__1028025852, ConsentRecord__673060467>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__306110559, DataAccessLog__1055846002>;
+    inviteTokens : Map__386906547<Text, InviteToken__758354029>;
+    kanzleien : Map__386906547<KanzleiId__573383471, NewKanzlei__52356447>;
+    klienten : Map__386906547<KlientId__770817176, Klient__188375859>;
+    leistungen : Map__386906547<LeistungId__304662582, Leistung__605390659>;
+    mandate : Map__386906547<MandatId__545152619, Mandat__454054521>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__894704366, Rechnung__280963576>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__573383471, NewRechnungsvorlage__904511930>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__389553694>;
+    users : Map__386906547<Principal, Leistungserbringer__526483097>;
+    zahlungen : Map__386906547<ZahlungId__109345887, Zahlung__806254896>
+  };
+type NewActor__541295713 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__514063202, AuditLogEntry__328259428>;
+    auslagen : Map__386906547<AuslageId__542746248, Auslage__119198234>;
+    consentRecords :
+      Map__386906547<ConsentId__236366967, ConsentRecord__952238669>;
+    inviteTokens : Map__386906547<Text, InviteToken__931507763>;
+    kanzleien : Map__386906547<KanzleiId__453269121, Kanzlei__971734846>;
+    klienten : Map__386906547<KlientId__711788489, Klient__306969773>;
+    leistungen : Map__386906547<LeistungId__875015761, Leistung__516484878>;
+    mandate : Map__386906547<MandatId__921636772, Mandat__571702722>;
+    rechnungen : Map__386906547<RechnungId__209997116, Rechnung__1071792626>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__453269121, Rechnungsvorlage__687825462>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__724449208>;
+    users : Map__386906547<Principal, Leistungserbringer__331911064>;
+    zahlungen : Map__386906547<ZahlungId__339355187, Zahlung__1060868101>
+  };
+type NewActor__55228231 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__805329849, AuditLogEntry__467192267>;
+    auslagen : Map__386906547<AuslageId__790552287, Auslage__968686381>;
+    consentRecords :
+      Map__386906547<ConsentId__190989927, ConsentRecord__1053459785>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__124975139, DataAccessLog__499336734>;
+    inviteTokens : Map__386906547<Text, InviteToken__477868674>;
+    kanzleien : Map__386906547<KanzleiId__677372243, NewKanzlei__542400845>;
+    klienten : Map__386906547<KlientId__44146836, Klient__323026711>;
+    leistungen : Map__386906547<LeistungId__824737745, Leistung__48560400>;
+    mandate : Map__386906547<MandatId__214293905, Mandat__46491840>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__378121226, Rechnung__499119369>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__677372243, NewRechnungsvorlage__323049931>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__20389636>;
+    users : Map__386906547<Principal, Leistungserbringer__932799556>;
+    zahlungen : Map__386906547<ZahlungId__911040842, Zahlung__54218787>
+  };
+type NewActor__605662815 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__698447041, AuditLogEntry__392082780>;
+    auslagen : Map__386906547<AuslageId__305958721, Auslage__257293149>;
+    consentRecords :
+      Map__386906547<ConsentId__862895455, ConsentRecord__602561336>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__226749434, DataAccessLog__104074890>;
+    inviteTokens : Map__386906547<Text, InviteToken__150681772>;
+    kanzleien : Map__386906547<KanzleiId__963881001, Kanzlei__419390637>;
+    klienten : Map__386906547<KlientId__702946769, Klient__60237789>;
+    leistungen : Map__386906547<LeistungId__244652742, Leistung__43981733>;
+    mandate : Map__386906547<MandatId__752959618, Mandat__164316579>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    nextSupportConversationId : {var count : Nat};
+    nextSupportMessageId : {var count : Nat};
+    pendingRegistrations :
+      Map__386906547<PendingRegistrationId__324929406,
+                      PendingRegistration__360001349>;
+    rechnungen : Map__386906547<RechnungId__179260019, Rechnung__407068137>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__963881001, Rechnungsvorlage__15511692>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__994607258>;
+    supportConversations :
+      Map__386906547<SupportConversationId__171373139,
+                      SupportConversation__511357881>;
+    supportMessages :
+      Map__386906547<SupportMessageId__1040191682, SupportMessage__927962032>;
+    users : Map__386906547<Principal, Leistungserbringer__661160419>;
+    zahlungen : Map__386906547<ZahlungId__140570500, Zahlung__393073612>
+  };
+type NewActor__680108815 =
+  {
+    auditLogs : Map__386906547<AuditLogId__948651959, AuditLogEntry__43439574>;
+    auslagen : Map__386906547<AuslageId__99860264, Auslage__745210221>;
+    consentRecords :
+      Map__386906547<ConsentId__714382364, ConsentRecord__1072480170>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__12668153, DataAccessLog__80121122>;
+    inviteTokens : Map__386906547<Text, InviteToken__954665523>;
+    kanzleien : Map__386906547<KanzleiId__984198703, NewKanzlei__109889292>;
+    klienten : Map__386906547<KlientId__215014776, Klient__399098318>;
+    leistungen : Map__386906547<LeistungId__68487648, Leistung__736934141>;
+    mandate : Map__386906547<MandatId__557396966, Mandat__1007423737>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen :
+      Map__386906547<RechnungId__885554351, NewRechnung__595052118>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__984198703, NewRechnungsvorlage__719332415>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__988378530>;
+    users : Map__386906547<Principal, Leistungserbringer__690498575>;
+    zahlungen : Map__386906547<ZahlungId__852630008, Zahlung__814019181>
+  };
+type NewActor__785199120 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__207982816, AuditLogEntry__303388791>;
+    auslagen : Map__386906547<AuslageId__354977908, Auslage__938558860>;
+    consentRecords :
+      Map__386906547<ConsentId__267478287, ConsentRecord__216343135>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__398484382, DataAccessLog__485033180>;
+    inviteTokens : Map__386906547<Text, InviteToken__79310674>;
+    kanzleien : Map__386906547<KanzleiId__448099939, NewKanzlei__779058002>;
+    klienten : Map__386906547<KlientId__850505425, Klient__173588667>;
+    leistungen : Map__386906547<LeistungId__376303229, Leistung__771087342>;
+    mandate : Map__386906547<MandatId__627202674, Mandat__623949770>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__483722454, Rechnung__250884019>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__448099939, NewRechnungsvorlage__773367124>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__717204313>;
+    users : Map__386906547<Principal, Leistungserbringer__961962353>;
+    zahlungen : Map__386906547<ZahlungId__636216175, Zahlung__206467569>
+  };
+type NewActor__852830555 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__317183390, AuditLogEntry__1025312952>;
+    auslagen : Map__386906547<AuslageId__889668847, Auslage__896388406>;
+    consentRecords :
+      Map__386906547<ConsentId__120598791, ConsentRecord__341403933>;
+    inviteTokens : Map__386906547<Text, InviteToken__309976853>;
+    kanzleien : Map__386906547<KanzleiId__761406786, Kanzlei__202190017>;
+    klienten : Map__386906547<KlientId__1006497231, Klient__1046366391>;
+    leistungen : Map__386906547<LeistungId__173072307, Leistung__274111735>;
+    mandate : Map__386906547<MandatId__547624938, Mandat__545918421>;
+    rechnungen : Map__386906547<RechnungId__771898738, Rechnung__638852529>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__761406786, Rechnungsvorlage__253247475>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__147229606>;
+    users : Map__386906547<Principal, Leistungserbringer__550977327>;
+    zahlungen : Map__386906547<ZahlungId__299381171, Zahlung__846826925>
+  };
+type NewActor__861681917 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__364196337, AuditLogEntry__413585016>;
+    auslagen : Map__386906547<AuslageId__209264271, Auslage__106322231>;
+    consentRecords :
+      Map__386906547<ConsentId__550416514, ConsentRecord__826058260>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__361731926, DataAccessLog__637312154>;
+    inviteTokens : Map__386906547<Text, InviteToken__379082348>;
+    kanzleien : Map__386906547<KanzleiId__781860675, NewKanzlei__49369585>;
+    klienten : Map__386906547<KlientId__365782658, Klient__914489132>;
+    leistungen : Map__386906547<LeistungId__416836739, Leistung__347095034>;
+    mandate : Map__386906547<MandatId__782916113, Mandat__488315977>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__144675726, Rechnung__239487506>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__781860675, Rechnungsvorlage__515518055>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__205706896>;
+    users : Map__386906547<Principal, Leistungserbringer__978731158>;
+    zahlungen : Map__386906547<ZahlungId__100161522, Zahlung__148866358>
+  };
+type NewActor__870284675 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__819000589, AuditLogEntry__257644895>;
+    auslagen : Map__386906547<AuslageId__59845742, Auslage__698754769>;
+    consentRecords :
+      Map__386906547<ConsentId__878609714, ConsentRecord__143575063>;
+    inviteTokens : Map__386906547<Text, InviteToken__789761563>;
+    kanzleien : Map__386906547<KanzleiId__237136202, Kanzlei__572998989>;
+    klienten : Map__386906547<KlientId__600987889, Klient__661087952>;
+    leistungen : Map__386906547<LeistungId__75917886, Leistung__905873088>;
+    mandate : Map__386906547<MandatId__379431804, NewMandat__933660387>;
+    rechnungen : Map__386906547<RechnungId__220905315, Rechnung__772739289>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__237136202, Rechnungsvorlage__843784561>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__72881505>;
+    users : Map__386906547<Principal, Leistungserbringer__550861529>;
+    zahlungen : Map__386906547<ZahlungId__229497893, Zahlung__644465209>
+  };
+type NewActor__882126555 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__213073432, AuditLogEntry__942437336>;
+    auslagen : Map__386906547<AuslageId__718570830, Auslage__317500749>;
+    consentRecords :
+      Map__386906547<ConsentId__57258093, ConsentRecord__581408675>;
+    inviteTokens : Map__386906547<Text, InviteToken__555695214>;
+    kanzleien : Map__386906547<KanzleiId__47081675, NewKanzlei__224981027>;
+    klienten : Map__386906547<KlientId__62773025, Klient__1007169812>;
+    leistungen : Map__386906547<LeistungId__253757463, Leistung__112830575>;
+    mandate : Map__386906547<MandatId__260337095, Mandat__262136200>;
+    rechnungen : Map__386906547<RechnungId__1017969697, Rechnung__495699865>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__47081675, Rechnungsvorlage__231869049>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__41670439>;
+    users : Map__386906547<Principal, Leistungserbringer__915577057>;
+    zahlungen : Map__386906547<ZahlungId__639747597, Zahlung__144407549>
+  };
+type NewKanzlei__109889292 =
+  {
+    createdAt : Timestamp__484678676;
+    defaultStundensatz : Nat;
+    id : KanzleiId__984198703;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__365401699
+  };
+type NewKanzlei__224981027 =
+  {
+    createdAt : Timestamp__423555228;
+    defaultStundensatz : Nat;
+    id : KanzleiId__47081675;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__279848286
+  };
+type NewKanzlei__313237643 =
+  {
+    createdAt : Timestamp__65239024;
+    defaultStundensatz : Nat;
+    id : KanzleiId__799918750;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__87776173
+  };
+type NewKanzlei__425530180 =
+  {
+    createdAt : Timestamp__61701786;
+    defaultStundensatz : Nat;
+    id : KanzleiId__912221420;
+    name : Text;
+    stammdaten : ?KanzleiStammdaten__379897000;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__108451750
+  };
+type NewKanzlei__49369585 =
+  {
+    createdAt : Timestamp__370930425;
+    defaultStundensatz : Nat;
+    id : KanzleiId__781860675;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__968243034
+  };
+type NewKanzlei__52356447 =
+  {
+    createdAt : Timestamp__193520280;
+    defaultStundensatz : Nat;
+    id : KanzleiId__573383471;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__843073507
+  };
+type NewKanzlei__542400845 =
+  {
+    createdAt : Timestamp__439849478;
+    defaultStundensatz : Nat;
+    id : KanzleiId__677372243;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__79481300
+  };
+type NewKanzlei__779058002 =
+  {
+    createdAt : Timestamp__259488989;
+    defaultStundensatz : Nat;
+    id : KanzleiId__448099939;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__1019056007
+  };
+type NewLayoutElementId__1016302739 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #schlusstext;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type NewLayoutElementId__468530905 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type NewLayoutElement__199149617 =
+  {
+    alignment : ?Position__475597575;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__1020353757;
+    heightMm : ?Float;
+    id : NewLayoutElementId__1016302739;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type NewLayoutElement__470961822 =
+  {
+    alignment : ?Position__746109212;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__957265915;
+    heightMm : ?Float;
+    id : LayoutElementId__324741056;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type NewLayoutElement__490061488 =
+  {
+    alignment : ?Position__651094707;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__892402996;
+    heightMm : ?Float;
+    id : LayoutElementId__6847474;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type NewLayoutElement__753823042 =
+  {
+    alignment : ?Position__559661659;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__925310703;
+    id : NewLayoutElementId__468530905;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool
+  };
+type NewMandat__933660387 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__337044678;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__337815941;
+    id : MandatId__379431804;
+    kanzleiId : KanzleiId__237136202;
+    klientId : KlientId__600987889;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    pauschalBetrag : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__327995706;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type NewRechnung__595052118 =
+  {
+    auslageIds : [AuslageId__99860264];
+    createdAt : Timestamp__484678676;
+    faelligkeitsdatum : Text;
+    id : RechnungId__885554351;
+    kanzleiId : KanzleiId__984198703;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__68487648];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__557396966;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    waehrung : Text;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__105479829
+  };
+type NewRechnungsvorlage__323049931 =
+  {
+    kanzleiId : KanzleiId__677372243;
+    layout : VorlageLayout__31032151;
+    layoutV2 : ?VorlageLayoutV2__539726837;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__247826801;
+    updatedAt : Timestamp__439849478
+  };
+type NewRechnungsvorlage__719332415 =
+  {
+    kanzleiId : KanzleiId__984198703;
+    layout : VorlageLayout__1012682284;
+    layoutV2 : ?NewVorlageLayoutV2__288526345;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__966093102;
+    updatedAt : Timestamp__484678676
+  };
+type NewRechnungsvorlage__773367124 =
+  {
+    kanzleiId : KanzleiId__448099939;
+    layout : VorlageLayout__699375260;
+    layoutV2 : ?NewVorlageLayoutV2__389511209;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__948403753;
+    updatedAt : Timestamp__259488989
+  };
+type NewRechnungsvorlage__904511930 =
+  {
+    kanzleiId : KanzleiId__573383471;
+    layout : VorlageLayout__220503031;
+    layoutV2 : ?NewVorlageLayoutV2__265693864;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__465767342;
+    updatedAt : Timestamp__193520280
+  };
+type NewRechnungsvorlage__956509106 =
+  {
+    kanzleiId : KanzleiId__799918750;
+    layout : VorlageLayout__678411677;
+    layoutV2 : ?NewVorlageLayoutV2__203639737;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__6233515;
+    updatedAt : Timestamp__65239024
+  };
+type NewVorlageLayoutV2__203639737 =
+  {elements : [NewLayoutElement__753823042]; gridCols : Nat; gridRows : Nat};
+type NewVorlageLayoutV2__265693864 =
+  {
+    elements : [NewLayoutElement__490061488];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type NewVorlageLayoutV2__288526345 =
+  {
+    elements : [NewLayoutElement__470961822];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type NewVorlageLayoutV2__389511209 =
+  {
+    elements : [NewLayoutElement__199149617];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type Node__430031793<K, V> =
+  {#internal : Internal__161573640<K, V>; #leaf : Leaf__1045638083<K, V>};
+type OldActor__210447126 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__317183390, AuditLogEntry__1025312952>;
+    auslagen : Map__386906547<AuslageId__889668847, Auslage__896388406>;
+    consentRecords :
+      Map__386906547<ConsentId__120598791, ConsentRecord__341403933>;
+    inviteTokens : Map__386906547<Text, InviteToken__309976853>;
+    kanzleien : Map__386906547<KanzleiId__761406786, Kanzlei__202190017>;
+    klienten : Map__386906547<KlientId__1006497231, Klient__1046366391>;
+    leistungen : Map__386906547<LeistungId__173072307, Leistung__274111735>;
+    mandate : Map__386906547<MandatId__547624938, Mandat__545918421>;
+    rechnungen : Map__386906547<RechnungId__771898738, Rechnung__638852529>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__761406786, Rechnungsvorlage__253247475>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__147229606>;
+    users : Map__386906547<Principal, Leistungserbringer__550977327>;
+    zahlungen : Map__386906547<ZahlungId__299381171, Zahlung__846826925>
+  };
+type OldActor__220611212 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__364196337, AuditLogEntry__413585016>;
+    auslagen : Map__386906547<AuslageId__209264271, Auslage__106322231>;
+    consentRecords :
+      Map__386906547<ConsentId__550416514, ConsentRecord__826058260>;
+    inviteTokens : Map__386906547<Text, InviteToken__379082348>;
+    kanzleien : Map__386906547<KanzleiId__781860675, NewKanzlei__49369585>;
+    klienten : Map__386906547<KlientId__365782658, Klient__914489132>;
+    leistungen : Map__386906547<LeistungId__416836739, Leistung__347095034>;
+    mandate : Map__386906547<MandatId__782916113, Mandat__488315977>;
+    rechnungen : Map__386906547<RechnungId__144675726, Rechnung__239487506>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__781860675, Rechnungsvorlage__515518055>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__205706896>;
+    users : Map__386906547<Principal, Leistungserbringer__978731158>;
+    zahlungen : Map__386906547<ZahlungId__100161522, Zahlung__148866358>
+  };
+type OldActor__34598060 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__319105815, AuditLogEntry__404412288>;
+    auslagen : Map__386906547<AuslageId__1069936901, Auslage__1010266925>;
+    consentRecords :
+      Map__386906547<ConsentId__21846978, ConsentRecord__113372627>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__32714339, DataAccessLog__1011043610>;
+    inviteTokens : Map__386906547<Text, InviteToken__13740555>;
+    kanzleien : Map__386906547<KanzleiId__912221420, OldKanzlei__543035732>;
+    klienten : Map__386906547<KlientId__522434133, Klient__298379104>;
+    leistungen : Map__386906547<LeistungId__362298552, Leistung__82263532>;
+    mandate : Map__386906547<MandatId__500583101, Mandat__141338283>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__370580315, Rechnung__11473634>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__912221420, Rechnungsvorlage__745210498>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__104005754>;
+    users : Map__386906547<Principal, Leistungserbringer__684236193>;
+    zahlungen : Map__386906547<ZahlungId__711121604, Zahlung__41073849>
+  };
+type OldActor__525151473 =
+  {
+    auditLogs : Map__386906547<AuditLogId__948651959, AuditLogEntry__43439574>;
+    auslagen : Map__386906547<AuslageId__99860264, Auslage__745210221>;
+    consentRecords :
+      Map__386906547<ConsentId__714382364, ConsentRecord__1072480170>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__12668153, DataAccessLog__80121122>;
+    inviteTokens : Map__386906547<Text, InviteToken__954665523>;
+    kanzleien : Map__386906547<KanzleiId__984198703, NewKanzlei__109889292>;
+    klienten : Map__386906547<KlientId__215014776, Klient__399098318>;
+    leistungen : Map__386906547<LeistungId__68487648, Leistung__736934141>;
+    mandate : Map__386906547<MandatId__557396966, Mandat__1007423737>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen :
+      Map__386906547<RechnungId__885554351, OldRechnung__730795870>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__984198703, NewRechnungsvorlage__719332415>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__988378530>;
+    users : Map__386906547<Principal, Leistungserbringer__690498575>;
+    zahlungen : Map__386906547<ZahlungId__852630008, Zahlung__814019181>
+  };
+type OldActor__674955567 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__953983423, AuditLogEntry__936940897>;
+    auslagen : Map__386906547<AuslageId__701753482, Auslage__726870140>;
+    consentRecords :
+      Map__386906547<ConsentId__844197653, ConsentRecord__302164963>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__537991787, DataAccessLog__292667932>;
+    inviteTokens : Map__386906547<Text, InviteToken__183354236>;
+    kanzleien : Map__386906547<KanzleiId__799918750, NewKanzlei__313237643>;
+    klienten : Map__386906547<KlientId__558411222, Klient__795774275>;
+    leistungen : Map__386906547<LeistungId__334576374, Leistung__452886939>;
+    mandate : Map__386906547<MandatId__364710086, Mandat__727318983>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__666667225, Rechnung__97840762>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__799918750, OldRechnungsvorlage__179447015>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__881682407>;
+    users : Map__386906547<Principal, Leistungserbringer__16426165>;
+    zahlungen : Map__386906547<ZahlungId__905846893, Zahlung__502590660>
+  };
+type OldActor__767507119 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__805329849, AuditLogEntry__467192267>;
+    auslagen : Map__386906547<AuslageId__790552287, Auslage__968686381>;
+    consentRecords :
+      Map__386906547<ConsentId__190989927, ConsentRecord__1053459785>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__124975139, DataAccessLog__499336734>;
+    inviteTokens : Map__386906547<Text, InviteToken__477868674>;
+    kanzleien : Map__386906547<KanzleiId__677372243, NewKanzlei__542400845>;
+    klienten : Map__386906547<KlientId__44146836, Klient__323026711>;
+    leistungen : Map__386906547<LeistungId__824737745, Leistung__48560400>;
+    mandate : Map__386906547<MandatId__214293905, Mandat__46491840>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__378121226, Rechnung__499119369>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__677372243, OldRechnungsvorlage__128048214>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__20389636>;
+    users : Map__386906547<Principal, Leistungserbringer__932799556>;
+    zahlungen : Map__386906547<ZahlungId__911040842, Zahlung__54218787>
+  };
+type OldActor__768613767 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__442591309, AuditLogEntry__856084269>;
+    auslagen : Map__386906547<AuslageId__406671608, Auslage__489715444>;
+    consentRecords :
+      Map__386906547<ConsentId__528994940, ConsentRecord__474437839>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__491374805, DataAccessLog__495174646>;
+    inviteTokens : Map__386906547<Text, InviteToken__723349324>;
+    kanzleien : Map__386906547<KanzleiId__104273513, Kanzlei__1059257044>;
+    klienten : Map__386906547<KlientId__528097443, Klient__160959864>;
+    leistungen : Map__386906547<LeistungId__453109421, Leistung__50529594>;
+    mandate : Map__386906547<MandatId__1024339012, Mandat__961656280>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__829838951, Rechnung__631353356>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__104273513, Rechnungsvorlage__292002309>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__526668750>;
+    users : Map__386906547<Principal, Leistungserbringer__658477108>;
+    zahlungen : Map__386906547<ZahlungId__271366872, Zahlung__202752787>
+  };
+type OldActor__836982589 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__819000589, AuditLogEntry__257644895>;
+    auslagen : Map__386906547<AuslageId__59845742, Auslage__698754769>;
+    consentRecords :
+      Map__386906547<ConsentId__878609714, ConsentRecord__143575063>;
+    inviteTokens : Map__386906547<Text, InviteToken__789761563>;
+    kanzleien : Map__386906547<KanzleiId__237136202, Kanzlei__572998989>;
+    klienten : Map__386906547<KlientId__600987889, Klient__661087952>;
+    leistungen : Map__386906547<LeistungId__75917886, Leistung__905873088>;
+    mandate : Map__386906547<MandatId__379431804, OldMandat__52126478>;
+    rechnungen : Map__386906547<RechnungId__220905315, Rechnung__772739289>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__237136202, Rechnungsvorlage__843784561>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__72881505>;
+    users : Map__386906547<Principal, Leistungserbringer__550861529>;
+    zahlungen : Map__386906547<ZahlungId__229497893, Zahlung__644465209>
+  };
+type OldActor__838338160 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__213073432, AuditLogEntry__942437336>;
+    auslagen : Map__386906547<AuslageId__718570830, Auslage__317500749>;
+    consentRecords :
+      Map__386906547<ConsentId__57258093, ConsentRecord__581408675>;
+    inviteTokens : Map__386906547<Text, InviteToken__555695214>;
+    kanzleien : Map__386906547<KanzleiId__47081675, OldKanzlei__15534279>;
+    klienten : Map__386906547<KlientId__62773025, Klient__1007169812>;
+    leistungen : Map__386906547<LeistungId__253757463, Leistung__112830575>;
+    mandate : Map__386906547<MandatId__260337095, Mandat__262136200>;
+    rechnungen : Map__386906547<RechnungId__1017969697, Rechnung__495699865>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__47081675, Rechnungsvorlage__231869049>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__41670439>;
+    users : Map__386906547<Principal, Leistungserbringer__915577057>;
+    zahlungen : Map__386906547<ZahlungId__639747597, Zahlung__144407549>
+  };
+type OldActor__852312503 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__698447041, AuditLogEntry__392082780>;
+    auslagen : Map__386906547<AuslageId__305958721, Auslage__257293149>;
+    consentRecords :
+      Map__386906547<ConsentId__862895455, ConsentRecord__602561336>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__226749434, DataAccessLog__104074890>;
+    inviteTokens : Map__386906547<Text, InviteToken__150681772>;
+    kanzleien : Map__386906547<KanzleiId__963881001, Kanzlei__419390637>;
+    klienten : Map__386906547<KlientId__702946769, Klient__60237789>;
+    leistungen : Map__386906547<LeistungId__244652742, Leistung__43981733>;
+    mandate : Map__386906547<MandatId__752959618, Mandat__164316579>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    nextSupportConversationId : {var count : Nat};
+    nextSupportMessageId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__179260019, Rechnung__407068137>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__963881001, Rechnungsvorlage__15511692>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__994607258>;
+    supportConversations :
+      Map__386906547<SupportConversationId__171373139,
+                      SupportConversation__511357881>;
+    supportMessages :
+      Map__386906547<SupportMessageId__1040191682, SupportMessage__927962032>;
+    users : Map__386906547<Principal, Leistungserbringer__661160419>;
+    zahlungen : Map__386906547<ZahlungId__140570500, Zahlung__393073612>
+  };
+type OldActor__885678680 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__219610058, AuditLogEntry__762735027>;
+    auslagen : Map__386906547<AuslageId__804158485, Auslage__1009024514>;
+    consentRecords :
+      Map__386906547<ConsentId__881358910, ConsentRecord__479258025>;
+    inviteTokens : Map__386906547<Text, InviteToken__539282515>;
+    kanzleien : Map__386906547<KanzleiId__943158718, Kanzlei__27760289>;
+    klienten : Map__386906547<KlientId__806221932, Klient__722130131>;
+    leistungen : Map__386906547<LeistungId__734834070, Leistung__574896089>;
+    mandate : Map__386906547<MandatId__261725170, Mandat__424218000>;
+    rechnungen : Map__386906547<RechnungId__990074158, Rechnung__447049399>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__943158718, Rechnungsvorlage__727648171>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__505225803>;
+    users : Map__386906547<Principal, OldLeistungserbringer__577679455>;
+    zahlungen : Map__386906547<ZahlungId__952665745, Zahlung__1047641295>
+  };
+type OldActor__914486186 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__259906035, AuditLogEntry__990077685>;
+    auslagen : Map__386906547<AuslageId__823466173, Auslage__337479419>;
+    consentRecords :
+      Map__386906547<ConsentId__1028025852, ConsentRecord__673060467>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__306110559, DataAccessLog__1055846002>;
+    inviteTokens : Map__386906547<Text, InviteToken__758354029>;
+    kanzleien : Map__386906547<KanzleiId__573383471, NewKanzlei__52356447>;
+    klienten : Map__386906547<KlientId__770817176, Klient__188375859>;
+    leistungen : Map__386906547<LeistungId__304662582, Leistung__605390659>;
+    mandate : Map__386906547<MandatId__545152619, Mandat__454054521>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__894704366, Rechnung__280963576>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__573383471, OldRechnungsvorlage__156644354>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__389553694>;
+    users : Map__386906547<Principal, Leistungserbringer__526483097>;
+    zahlungen : Map__386906547<ZahlungId__109345887, Zahlung__806254896>
+  };
+type OldActor__970016431 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__207982816, AuditLogEntry__303388791>;
+    auslagen : Map__386906547<AuslageId__354977908, Auslage__938558860>;
+    consentRecords :
+      Map__386906547<ConsentId__267478287, ConsentRecord__216343135>;
+    dataAccessLogs :
+      Map__386906547<DatenschutzId__398484382, DataAccessLog__485033180>;
+    inviteTokens : Map__386906547<Text, InviteToken__79310674>;
+    kanzleien : Map__386906547<KanzleiId__448099939, NewKanzlei__779058002>;
+    klienten : Map__386906547<KlientId__850505425, Klient__173588667>;
+    leistungen : Map__386906547<LeistungId__376303229, Leistung__771087342>;
+    mandate : Map__386906547<MandatId__627202674, Mandat__623949770>;
+    nextAuditId : {var count : Nat};
+    nextDataAccessId : {var count : Nat};
+    rechnungen : Map__386906547<RechnungId__483722454, Rechnung__250884019>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__448099939, OldRechnungsvorlage__1040704210>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__717204313>;
+    users : Map__386906547<Principal, Leistungserbringer__961962353>;
+    zahlungen : Map__386906547<ZahlungId__636216175, Zahlung__206467569>
+  };
+type OldActor__997666542 =
+  {
+    auditLogs :
+      Map__386906547<AuditLogId__514063202, AuditLogEntry__328259428>;
+    auslagen : Map__386906547<AuslageId__542746248, Auslage__119198234>;
+    consentRecords :
+      Map__386906547<ConsentId__236366967, ConsentRecord__952238669>;
+    inviteTokens : Map__386906547<Text, InviteToken__931507763>;
+    kanzleien : Map__386906547<KanzleiId__453269121, Kanzlei__971734846>;
+    klienten : Map__386906547<KlientId__711788489, Klient__306969773>;
+    leistungen : Map__386906547<LeistungId__875015761, Leistung__516484878>;
+    mandate : Map__386906547<MandatId__921636772, Mandat__571702722>;
+    rechnungen : Map__386906547<RechnungId__209997116, Rechnung__1071792626>;
+    rechnungsNummer : {var count : Nat};
+    rechnungsvorlagen :
+      Map__386906547<KanzleiId__453269121, Rechnungsvorlage__687825462>;
+    superAdminWhitelist :
+      Map__386906547<Principal, SuperAdminWhitelistEntry__724449208>;
+    users : Map__386906547<Principal, Leistungserbringer__331911064>;
+    zahlungen : Map__386906547<ZahlungId__339355187, Zahlung__1060868101>
+  };
+type OldKanzlei__15534279 =
+  {
+    createdAt : Timestamp__423555228;
+    defaultStundensatz : Nat;
+    id : KanzleiId__47081675;
+    name : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__279848286
+  };
+type OldKanzlei__543035732 =
+  {
+    createdAt : Timestamp__61701786;
+    defaultStundensatz : Nat;
+    id : KanzleiId__912221420;
+    name : Text;
+    status : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__108451750
+  };
+type OldLayoutElementId__202127983 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type OldLayoutElementId__808166258 =
+  {
+    #absenderadresse;
+    #einleitung;
+    #empfaengeradresse;
+    #fusszeile;
+    #leistungspositionen;
+    #logo;
+    #mandatsinfo;
+    #rechnungsmetadaten;
+    #spesenAuslagen;
+    #summenblock;
+    #zahlungsinformationen
+  };
+type OldLayoutElement__104137884 =
+  {
+    alignment : ?Position__651094707;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__892402996;
+    id : LayoutElementId__6847474;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool
+  };
+type OldLayoutElement__501543836 =
+  {
+    alignment : ?Position__559661659;
+    gridArea : GridArea__925310703;
+    id : OldLayoutElementId__202127983;
+    order : Nat;
+    visible : Bool
+  };
+type OldLayoutElement__802859388 =
+  {
+    alignment : ?Position__475597575;
+    bold : ?Bool;
+    fontFamily : ?Text;
+    fontSize : ?Nat;
+    gridArea : GridArea__1020353757;
+    heightMm : ?Float;
+    id : OldLayoutElementId__808166258;
+    italic : ?Bool;
+    order : Nat;
+    visible : Bool;
+    widthMm : ?Float;
+    xMm : ?Float;
+    yMm : ?Float;
+    zOrder : ?Nat
+  };
+type OldLeistungserbringer__577679455 =
+  {
+    email : Text;
+    id : Principal;
+    isAdmin : Bool;
+    kanzleiId : KanzleiId__943158718;
+    nachname : Text;
+    registeredAt : Timestamp__601951716;
+    role : ?OldRole__106043903;
+    status : Text;
+    titel : Text;
+    vorname : Text
+  };
+type OldMandat__52126478 =
+  {
+    akquisiteurId : Principal;
+    akquisitionsbonus : Nat;
+    auslagenregelung : Auslagenregelung__337044678;
+    autokilometer : Float;
+    bezeichnung : Text;
+    budget : Nat;
+    createdAt : Timestamp__337815941;
+    id : MandatId__379431804;
+    kanzleiId : KanzleiId__237136202;
+    klientId : KlientId__600987889;
+    kostenProKopie : Float;
+    kostenProScan : Float;
+    leistungenAusweisen : Bool;
+    mwstSatz : Nat;
+    portoAPost : Float;
+    portoBPost : Float;
+    portoEinschreiben : Float;
+    rundungAktiv : Bool;
+    standardStundensatz : Nat;
+    status : MandatStatus__327995706;
+    waehrung : Text;
+    zahlungsbedingungen : Text
+  };
+type OldRechnung__730795870 =
+  {
+    auslageIds : [AuslageId__99860264];
+    createdAt : Timestamp__484678676;
+    faelligkeitsdatum : Text;
+    id : RechnungId__885554351;
+    kanzleiId : KanzleiId__984198703;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__68487648];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__557396966;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__105479829
+  };
+type OldRechnungsvorlage__1040704210 =
+  {
+    kanzleiId : KanzleiId__448099939;
+    layout : VorlageLayout__699375260;
+    layoutV2 : ?OldVorlageLayoutV2__1010560412;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__948403753;
+    updatedAt : Timestamp__259488989
+  };
+type OldRechnungsvorlage__128048214 =
+  {
+    kanzleiId : KanzleiId__677372243;
+    layout : VorlageLayout__31032151;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__247826801;
+    updatedAt : Timestamp__439849478
+  };
+type OldRechnungsvorlage__156644354 =
+  {
+    kanzleiId : KanzleiId__573383471;
+    layout : VorlageLayout__220503031;
+    layoutV2 : ?OldVorlageLayoutV2__446467601;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__465767342;
+    updatedAt : Timestamp__193520280
+  };
+type OldRechnungsvorlage__179447015 =
+  {
+    kanzleiId : KanzleiId__799918750;
+    layout : VorlageLayout__678411677;
+    layoutV2 : ?OldVorlageLayoutV2__367338102;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__6233515;
+    updatedAt : Timestamp__65239024
+  };
+type OldRole__106043903 = {#admin; #anwalt; #mandant; #mitarbeiter};
+type OldVorlageLayoutV2__1010560412 =
+  {
+    elements : [OldLayoutElement__802859388];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type OldVorlageLayoutV2__367338102 =
+  {elements : [OldLayoutElement__501543836]; gridCols : Nat; gridRows : Nat};
+type OldVorlageLayoutV2__446467601 =
+  {elements : [OldLayoutElement__104137884]; gridCols : Nat; gridRows : Nat};
+type PendingRegistrationId__324929406 = Text;
+type PendingRegistrationId__528919439 = Text;
+type PendingRegistration__360001349 =
+  {
+    createdAt : Timestamp__15064063;
+    email : Text;
+    emailVerified : Bool;
+    id : PendingRegistrationId__324929406;
+    kanzleiName : Text;
+    lastCodeSentAt : Timestamp__15064063;
+    nachname : Text;
+    titel : Text;
+    verificationAttempts : Nat;
+    verificationCodeHash : Text;
+    verificationExpiresAt : Timestamp__15064063;
+    verifiedAt : ?Timestamp__15064063;
+    vorname : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__598637363
+  };
+type PendingRegistration__748346039 =
+  {
+    createdAt : Timestamp__301639476;
+    email : Text;
+    emailVerified : Bool;
+    id : PendingRegistrationId__528919439;
+    kanzleiName : Text;
+    lastCodeSentAt : Timestamp__301639476;
+    nachname : Text;
+    titel : Text;
+    verificationAttempts : Nat;
+    verificationCodeHash : Text;
+    verificationExpiresAt : Timestamp__301639476;
+    verifiedAt : ?Timestamp__301639476;
+    vorname : Text;
+    zahlungsmodalitaet : ?Zahlungsmodalitaet__401249149
+  };
+type Position__1010551551 = {#links; #rechts; #zentriert};
+type Position__111796068 = {#links; #rechts; #zentriert};
+type Position__116500658 = {#links; #rechts; #zentriert};
+type Position__475597575 = {#links; #rechts; #zentriert};
+type Position__548280551 = {#links; #rechts; #zentriert};
+type Position__559661659 = {#links; #rechts; #zentriert};
+type Position__594833854 = {#links; #rechts; #zentriert};
+type Position__651094707 = {#links; #rechts; #zentriert};
+type Position__7188122 = {#links; #rechts; #zentriert};
+type Position__746109212 = {#links; #rechts; #zentriert};
+type Position__831429868 = {#links; #rechts; #zentriert};
+type Position__838640837 = {#links; #rechts; #zentriert};
+type Position__851703707 = {#links; #rechts; #zentriert};
+type Position__930133566 = {#links; #rechts; #zentriert};
+type Position__942064189 = {#links; #rechts; #zentriert};
+type RechnungId__1017969697 = Text;
+type RechnungId__144675726 = Text;
+type RechnungId__179260019 = Text;
+type RechnungId__209997116 = Text;
+type RechnungId__220905315 = Text;
+type RechnungId__370580315 = Text;
+type RechnungId__378121226 = Text;
+type RechnungId__483722454 = Text;
+type RechnungId__59301919 = Text;
+type RechnungId__666667225 = Text;
+type RechnungId__771898738 = Text;
+type RechnungId__829838951 = Text;
+type RechnungId__885554351 = Text;
+type RechnungId__894704366 = Text;
+type RechnungId__990074158 = Text;
+type Rechnung__1071792626 =
+  {
+    auslageIds : [AuslageId__542746248];
+    createdAt : Timestamp__428085620;
+    faelligkeitsdatum : Text;
+    id : RechnungId__209997116;
+    kanzleiId : KanzleiId__453269121;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__875015761];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__921636772;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__670434909
+  };
+type Rechnung__11473634 =
+  {
+    auslageIds : [AuslageId__1069936901];
+    createdAt : Timestamp__61701786;
+    faelligkeitsdatum : Text;
+    id : RechnungId__370580315;
+    kanzleiId : KanzleiId__912221420;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__362298552];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__500583101;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    waehrung : Text;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__497671008
+  };
+type Rechnung__239487506 =
+  {
+    auslageIds : [AuslageId__209264271];
+    createdAt : Timestamp__370930425;
+    faelligkeitsdatum : Text;
+    id : RechnungId__144675726;
+    kanzleiId : KanzleiId__781860675;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__416836739];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__782916113;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__917348861
+  };
+type Rechnung__250884019 =
+  {
+    auslageIds : [AuslageId__354977908];
+    createdAt : Timestamp__259488989;
+    faelligkeitsdatum : Text;
+    id : RechnungId__483722454;
+    kanzleiId : KanzleiId__448099939;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__376303229];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__627202674;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    waehrung : Text;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__753977574
+  };
+type Rechnung__280963576 =
+  {
+    auslageIds : [AuslageId__823466173];
+    createdAt : Timestamp__193520280;
+    faelligkeitsdatum : Text;
+    id : RechnungId__894704366;
+    kanzleiId : KanzleiId__573383471;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__304662582];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__545152619;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__683950183
+  };
+type Rechnung__407068137 =
+  {
+    auslageIds : [AuslageId__305958721];
+    createdAt : Timestamp__15064063;
+    faelligkeitsdatum : Text;
+    id : RechnungId__179260019;
+    kanzleiId : KanzleiId__963881001;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__244652742];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__752959618;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    waehrung : Text;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__1061090197
+  };
+type Rechnung__447049399 =
+  {
+    auslageIds : [AuslageId__804158485];
+    createdAt : Timestamp__601951716;
+    faelligkeitsdatum : Text;
+    id : RechnungId__990074158;
+    kanzleiId : KanzleiId__943158718;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__734834070];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__261725170;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__401179596
+  };
+type Rechnung__495699865 =
+  {
+    auslageIds : [AuslageId__718570830];
+    createdAt : Timestamp__423555228;
+    faelligkeitsdatum : Text;
+    id : RechnungId__1017969697;
+    kanzleiId : KanzleiId__47081675;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__253757463];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__260337095;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__676513625
+  };
+type Rechnung__499119369 =
+  {
+    auslageIds : [AuslageId__790552287];
+    createdAt : Timestamp__439849478;
+    faelligkeitsdatum : Text;
+    id : RechnungId__378121226;
+    kanzleiId : KanzleiId__677372243;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__824737745];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__214293905;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__41778463
+  };
+type Rechnung__534684638 =
+  {
+    auslageIds : [AuslageId__513296397];
+    createdAt : Timestamp__301639476;
+    faelligkeitsdatum : Text;
+    id : RechnungId__59301919;
+    kanzleiId : KanzleiId__17752468;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__258696945];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__157897851;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    waehrung : Text;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__706030892
+  };
+type Rechnung__631353356 =
+  {
+    auslageIds : [AuslageId__406671608];
+    createdAt : Timestamp__327021498;
+    faelligkeitsdatum : Text;
+    id : RechnungId__829838951;
+    kanzleiId : KanzleiId__104273513;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__453109421];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__1024339012;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    waehrung : Text;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__349769927
+  };
+type Rechnung__638852529 =
+  {
+    auslageIds : [AuslageId__889668847];
+    createdAt : Timestamp__260586903;
+    faelligkeitsdatum : Text;
+    id : RechnungId__771898738;
+    kanzleiId : KanzleiId__761406786;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__173072307];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__547624938;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__56028077
+  };
+type Rechnung__772739289 =
+  {
+    auslageIds : [AuslageId__59845742];
+    createdAt : Timestamp__337815941;
+    faelligkeitsdatum : Text;
+    id : RechnungId__220905315;
+    kanzleiId : KanzleiId__237136202;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__75917886];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__379431804;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__812841874
+  };
+type Rechnung__97840762 =
+  {
+    auslageIds : [AuslageId__701753482];
+    createdAt : Timestamp__65239024;
+    faelligkeitsdatum : Text;
+    id : RechnungId__666667225;
+    kanzleiId : KanzleiId__799918750;
+    leistungserbringerId : Principal;
+    leistungspositionen : [LeistungId__334576374];
+    leistungszeitraumBis : Text;
+    leistungszeitraumVon : Text;
+    mandatId : MandatId__364710086;
+    mwstBetrag : Nat;
+    rechnungsdatum : Text;
+    rechnungsnummer : Text;
+    subtotal : Nat;
+    total : Nat;
+    zahlungsbedingungen : Text;
+    zahlungsstatus : ZahlungsStatus__353633203
+  };
+type Rechnungsvorlage__15511692 =
+  {
+    kanzleiId : KanzleiId__963881001;
+    layout : VorlageLayout__300342342;
+    layoutV2 : ?VorlageLayoutV2__431138155;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__252043448;
+    updatedAt : Timestamp__15064063
+  };
+type Rechnungsvorlage__231869049 =
+  {
+    kanzleiId : KanzleiId__47081675;
+    layout : VorlageLayout__524475787;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__367623758;
+    updatedAt : Timestamp__423555228
+  };
+type Rechnungsvorlage__253247475 =
+  {
+    kanzleiId : KanzleiId__761406786;
+    layout : VorlageLayout__8113295;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__558907269;
+    updatedAt : Timestamp__260586903
+  };
+type Rechnungsvorlage__292002309 =
+  {
+    kanzleiId : KanzleiId__104273513;
+    layout : VorlageLayout__328823505;
+    layoutV2 : ?VorlageLayoutV2__744120668;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__374096571;
+    updatedAt : Timestamp__327021498
+  };
+type Rechnungsvorlage__497831746 =
+  {
+    kanzleiId : KanzleiId__17752468;
+    layout : VorlageLayout__440159369;
+    layoutV2 : ?VorlageLayoutV2__964250559;
+    logoBlob : ?ExternalBlob__220559234;
+    standardtexte : Standardtexte__230707303;
+    updatedAt : Timestamp__301639476
+  };
+type Rechnungsvorlage__515518055 =
+  {
+    kanzleiId : KanzleiId__781860675;
+    layout : VorlageLayout__788801354;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__107259921;
+    updatedAt : Timestamp__370930425
+  };
+type Rechnungsvorlage__687825462 =
+  {
+    kanzleiId : KanzleiId__453269121;
+    layout : VorlageLayout__158207949;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__599774327;
+    updatedAt : Timestamp__428085620
+  };
+type Rechnungsvorlage__727648171 =
+  {
+    kanzleiId : KanzleiId__943158718;
+    layout : VorlageLayout__956619169;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__123425878;
+    updatedAt : Timestamp__601951716
+  };
+type Rechnungsvorlage__745210498 =
+  {
+    kanzleiId : KanzleiId__912221420;
+    layout : VorlageLayout__599385673;
+    layoutV2 : ?VorlageLayoutV2__160891827;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__111227285;
+    updatedAt : Timestamp__61701786
+  };
+type Rechnungsvorlage__843784561 =
+  {
+    kanzleiId : KanzleiId__237136202;
+    layout : VorlageLayout__366842798;
+    logoBlob : ?Blob;
+    standardtexte : Standardtexte__158532710;
+    updatedAt : Timestamp__337815941
+  };
+type Role__1033530364 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__155501100 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__304792061 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__371922142 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__403959311 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__525729681 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__530298872 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__555697920 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__634780074 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__686600149 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__706760474 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__848519021 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__890054381 = {#admin; #anwalt; #mandant; #mitarbeiter};
+type Role__903893475 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Role__975053785 =
+  {#admin; #anwalt; #mandant; #mitarbeiter; #plattform_admin};
+type Standardtexte__107259921 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__111227285 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__123425878 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__158532710 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__230707303 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__247826801 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__252043448 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__367623758 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__374096571 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__465767342 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__558907269 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__599774327 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__6233515 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__948403753 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type Standardtexte__966093102 =
+  {
+    einleitung : Text;
+    rechnungstitel : Text;
+    schlusstext : Text;
+    zahlungshinweis : Text
+  };
+type StatusHistoryEntry__123234049 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__152838218 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__300460634 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__313431936 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__317410492 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__517612760 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__562544982 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__635044316 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__659329614 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__663083162 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__677539585 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__885844530 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__964934152 = {month : Nat; status : Text; year : Nat};
+type StatusHistoryEntry__971806020 = {month : Nat; status : Text; year : Nat};
+type SuperAdminWhitelistEntry__104005754 =
+  {addedAt : Timestamp__61701786; principal : Principal};
+type SuperAdminWhitelistEntry__147229606 =
+  {addedAt : Timestamp__260586903; principal : Principal};
+type SuperAdminWhitelistEntry__20389636 =
+  {addedAt : Timestamp__439849478; principal : Principal};
+type SuperAdminWhitelistEntry__205706896 =
+  {addedAt : Timestamp__370930425; principal : Principal};
+type SuperAdminWhitelistEntry__387002569 =
+  {addedAt : Timestamp__301639476; principal : Principal};
+type SuperAdminWhitelistEntry__389553694 =
+  {addedAt : Timestamp__193520280; principal : Principal};
+type SuperAdminWhitelistEntry__41670439 =
+  {addedAt : Timestamp__423555228; principal : Principal};
+type SuperAdminWhitelistEntry__505225803 =
+  {addedAt : Timestamp__601951716; principal : Principal};
+type SuperAdminWhitelistEntry__526668750 =
+  {addedAt : Timestamp__327021498; principal : Principal};
+type SuperAdminWhitelistEntry__717204313 =
+  {addedAt : Timestamp__259488989; principal : Principal};
+type SuperAdminWhitelistEntry__724449208 =
+  {addedAt : Timestamp__428085620; principal : Principal};
+type SuperAdminWhitelistEntry__72881505 =
+  {addedAt : Timestamp__337815941; principal : Principal};
+type SuperAdminWhitelistEntry__881682407 =
+  {addedAt : Timestamp__65239024; principal : Principal};
+type SuperAdminWhitelistEntry__988378530 =
+  {addedAt : Timestamp__484678676; principal : Principal};
+type SuperAdminWhitelistEntry__994607258 =
+  {addedAt : Timestamp__15064063; principal : Principal};
+type SupportCategory__119459755 =
+  {#feedback; #fehler; #frage; #verbesserungsvorschlag};
+type SupportCategory__588692601 =
+  {#feedback; #fehler; #frage; #verbesserungsvorschlag};
+type SupportCategory__937047364 =
+  {#feedback; #fehler; #frage; #verbesserungsvorschlag};
+type SupportConversationId__171373139 = Text;
+type SupportConversationId__327574235 = Text;
+type SupportConversationId__659344934 = Text;
+type SupportConversation__511357881 =
+  {
+    appRoute : Text;
+    appVersion : Text;
+    category : SupportCategory__937047364;
+    createdAt : Timestamp__15064063;
+    createdByUserId : Text;
+    createdByUserName : Text;
+    id : SupportConversationId__171373139;
+    kanzleiId : KanzleiId__963881001;
+    status : SupportStatus__95542152;
+    subject : Text;
+    updatedAt : Timestamp__15064063
+  };
+type SupportConversation__831183193 =
+  {
+    appRoute : Text;
+    appVersion : Text;
+    category : SupportCategory__119459755;
+    createdAt : Timestamp__327021498;
+    createdByUserId : Text;
+    createdByUserName : Text;
+    id : SupportConversationId__327574235;
+    kanzleiId : KanzleiId__104273513;
+    status : SupportStatus__1011463458;
+    subject : Text;
+    updatedAt : Timestamp__327021498
+  };
+type SupportConversation__95027270 =
+  {
+    appRoute : Text;
+    appVersion : Text;
+    category : SupportCategory__588692601;
+    createdAt : Int;
+    createdByUserId : Text;
+    createdByUserName : Text;
+    id : SupportConversationId__659344934;
+    kanzleiId : KanzleiId__17752468;
+    status : SupportStatus__395801188;
+    subject : Text;
+    updatedAt : Int
+  };
+type SupportMessageId__1040191682 = Text;
+type SupportMessageId__548160280 = Text;
+type SupportMessageId__899356409 = Text;
+type SupportMessage__112935291 =
+  {
+    conversationId : SupportConversationId__659344934;
+    createdAt : Int;
+    id : SupportMessageId__548160280;
+    message : Text;
+    readAt : ?Int;
+    senderType : SupportSenderType__854810022;
+    senderUserId : Text;
+    senderUserName : Text
+  };
+type SupportMessage__659546118 =
+  {
+    conversationId : SupportConversationId__327574235;
+    createdAt : Timestamp__327021498;
+    id : SupportMessageId__899356409;
+    message : Text;
+    readAt : ?Timestamp__327021498;
+    senderType : SupportSenderType__1045159050;
+    senderUserId : Text;
+    senderUserName : Text
+  };
+type SupportMessage__927962032 =
+  {
+    conversationId : SupportConversationId__171373139;
+    createdAt : Timestamp__15064063;
+    id : SupportMessageId__1040191682;
+    message : Text;
+    readAt : ?Timestamp__15064063;
+    senderType : SupportSenderType__424356208;
+    senderUserId : Text;
+    senderUserName : Text
+  };
+type SupportSenderType__1045159050 = {#platformAdmin; #user};
+type SupportSenderType__424356208 = {#platformAdmin; #user};
+type SupportSenderType__854810022 = {#platformAdmin; #user};
+type SupportStatus__1011463458 =
+  {#archiviert; #erledigt; #in_bearbeitung; #neu};
+type SupportStatus__395801188 =
+  {#archiviert; #erledigt; #in_bearbeitung; #neu};
+type SupportStatus__95542152 =
+  {#archiviert; #erledigt; #in_bearbeitung; #neu};
+type Timestamp__15064063 = Int;
+type Timestamp__193520280 = Int;
+type Timestamp__259488989 = Int;
+type Timestamp__260586903 = Int;
+type Timestamp__301639476 = Int;
+type Timestamp__327021498 = Int;
+type Timestamp__337815941 = Int;
+type Timestamp__370930425 = Int;
+type Timestamp__423555228 = Int;
+type Timestamp__428085620 = Int;
+type Timestamp__439849478 = Int;
+type Timestamp__484678676 = Int;
+type Timestamp__601951716 = Int;
+type Timestamp__61701786 = Int;
+type Timestamp__65239024 = Int;
+type VorlageLayoutV2__160891827 =
+  {
+    elements : [LayoutElement__576786259];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type VorlageLayoutV2__431138155 =
+  {
+    elements : [LayoutElement__608633910];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type VorlageLayoutV2__539726837 =
+  {elements : [LayoutElement__820645463]; gridCols : Nat; gridRows : Nat};
+type VorlageLayoutV2__744120668 =
+  {
+    elements : [LayoutElement__678094933];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type VorlageLayoutV2__964250559 =
+  {
+    elements : [LayoutElement__356125410];
+    gridCols : Nat;
+    gridRows : Nat;
+    marginBottomMm : Float;
+    marginLeftMm : Float;
+    marginRightMm : Float;
+    marginTopMm : Float;
+    pageHeightMm : Float;
+    pageWidthMm : Float
+  };
+type VorlageLayout__1012682284 =
+  {
+    absenderPosition : Position__746109212;
+    empfaengerPosition : Position__746109212;
+    fusszeile : Text;
+    logoPosition : Position__746109212
+  };
+type VorlageLayout__158207949 =
+  {
+    absenderPosition : Position__7188122;
+    empfaengerPosition : Position__7188122;
+    fusszeile : Text;
+    logoPosition : Position__7188122
+  };
+type VorlageLayout__220503031 =
+  {
+    absenderPosition : Position__651094707;
+    empfaengerPosition : Position__651094707;
+    fusszeile : Text;
+    logoPosition : Position__651094707
+  };
+type VorlageLayout__300342342 =
+  {
+    absenderPosition : Position__116500658;
+    empfaengerPosition : Position__116500658;
+    fusszeile : Text;
+    logoPosition : Position__116500658
+  };
+type VorlageLayout__31032151 =
+  {
+    absenderPosition : Position__838640837;
+    empfaengerPosition : Position__838640837;
+    fusszeile : Text;
+    logoPosition : Position__838640837
+  };
+type VorlageLayout__328823505 =
+  {
+    absenderPosition : Position__548280551;
+    empfaengerPosition : Position__548280551;
+    fusszeile : Text;
+    logoPosition : Position__548280551
+  };
+type VorlageLayout__366842798 =
+  {
+    absenderPosition : Position__930133566;
+    empfaengerPosition : Position__930133566;
+    fusszeile : Text;
+    logoPosition : Position__930133566
+  };
+type VorlageLayout__440159369 =
+  {
+    absenderPosition : Position__1010551551;
+    empfaengerPosition : Position__1010551551;
+    fusszeile : Text;
+    logoPosition : Position__1010551551
+  };
+type VorlageLayout__524475787 =
+  {
+    absenderPosition : Position__942064189;
+    empfaengerPosition : Position__942064189;
+    fusszeile : Text;
+    logoPosition : Position__942064189
+  };
+type VorlageLayout__599385673 =
+  {
+    absenderPosition : Position__594833854;
+    empfaengerPosition : Position__594833854;
+    fusszeile : Text;
+    logoPosition : Position__594833854
+  };
+type VorlageLayout__678411677 =
+  {
+    absenderPosition : Position__559661659;
+    empfaengerPosition : Position__559661659;
+    fusszeile : Text;
+    logoPosition : Position__559661659
+  };
+type VorlageLayout__699375260 =
+  {
+    absenderPosition : Position__475597575;
+    empfaengerPosition : Position__475597575;
+    fusszeile : Text;
+    logoPosition : Position__475597575
+  };
+type VorlageLayout__788801354 =
+  {
+    absenderPosition : Position__111796068;
+    empfaengerPosition : Position__111796068;
+    fusszeile : Text;
+    logoPosition : Position__111796068
+  };
+type VorlageLayout__8113295 =
+  {
+    absenderPosition : Position__851703707;
+    empfaengerPosition : Position__851703707;
+    fusszeile : Text;
+    logoPosition : Position__851703707
+  };
+type VorlageLayout__956619169 =
+  {
+    absenderPosition : Position__831429868;
+    empfaengerPosition : Position__831429868;
+    fusszeile : Text;
+    logoPosition : Position__831429868
+  };
+type ZahlungEingangStatus__113387170 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__140616574 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__195673358 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__218999664 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__229633755 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__321143179 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__3712969 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__419886298 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__490869318 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__808303666 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__868985786 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__885932783 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__942288218 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__943053566 = {#bestaetigt; #eingegangen};
+type ZahlungEingangStatus__981434867 = {#bestaetigt; #eingegangen};
+type ZahlungId__100161522 = Text;
+type ZahlungId__109345887 = Text;
+type ZahlungId__140570500 = Text;
+type ZahlungId__156113644 = Text;
+type ZahlungId__229497893 = Text;
+type ZahlungId__271366872 = Text;
+type ZahlungId__299381171 = Text;
+type ZahlungId__339355187 = Text;
+type ZahlungId__636216175 = Text;
+type ZahlungId__639747597 = Text;
+type ZahlungId__711121604 = Text;
+type ZahlungId__852630008 = Text;
+type ZahlungId__905846893 = Text;
+type ZahlungId__911040842 = Text;
+type ZahlungId__952665745 = Text;
+type Zahlung__1047641295 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__601951716;
+    datum : Text;
+    id : ZahlungId__952665745;
+    kanzleiId : KanzleiId__943158718;
+    rechnungId : RechnungId__990074158;
+    status : ZahlungEingangStatus__195673358
+  };
+type Zahlung__1060868101 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__428085620;
+    datum : Text;
+    id : ZahlungId__339355187;
+    kanzleiId : KanzleiId__453269121;
+    rechnungId : RechnungId__209997116;
+    status : ZahlungEingangStatus__885932783
+  };
+type Zahlung__144407549 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__423555228;
+    datum : Text;
+    id : ZahlungId__639747597;
+    kanzleiId : KanzleiId__47081675;
+    rechnungId : RechnungId__1017969697;
+    status : ZahlungEingangStatus__981434867
+  };
+type Zahlung__148866358 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__370930425;
+    datum : Text;
+    id : ZahlungId__100161522;
+    kanzleiId : KanzleiId__781860675;
+    rechnungId : RechnungId__144675726;
+    status : ZahlungEingangStatus__229633755
+  };
+type Zahlung__202752787 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__327021498;
+    datum : Text;
+    id : ZahlungId__271366872;
+    kanzleiId : KanzleiId__104273513;
+    rechnungId : RechnungId__829838951;
+    status : ZahlungEingangStatus__218999664
+  };
+type Zahlung__206467569 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__259488989;
+    datum : Text;
+    id : ZahlungId__636216175;
+    kanzleiId : KanzleiId__448099939;
+    rechnungId : RechnungId__483722454;
+    status : ZahlungEingangStatus__321143179
+  };
+type Zahlung__393073612 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__15064063;
+    datum : Text;
+    id : ZahlungId__140570500;
+    kanzleiId : KanzleiId__963881001;
+    rechnungId : RechnungId__179260019;
+    status : ZahlungEingangStatus__808303666
+  };
+type Zahlung__41073849 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__61701786;
+    datum : Text;
+    id : ZahlungId__711121604;
+    kanzleiId : KanzleiId__912221420;
+    rechnungId : RechnungId__370580315;
+    status : ZahlungEingangStatus__113387170
+  };
+type Zahlung__502590660 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__65239024;
+    datum : Text;
+    id : ZahlungId__905846893;
+    kanzleiId : KanzleiId__799918750;
+    rechnungId : RechnungId__666667225;
+    status : ZahlungEingangStatus__943053566
+  };
+type Zahlung__531437748 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__301639476;
+    datum : Text;
+    id : ZahlungId__156113644;
+    kanzleiId : KanzleiId__17752468;
+    rechnungId : RechnungId__59301919;
+    status : ZahlungEingangStatus__140616574
+  };
+type Zahlung__54218787 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__439849478;
+    datum : Text;
+    id : ZahlungId__911040842;
+    kanzleiId : KanzleiId__677372243;
+    rechnungId : RechnungId__378121226;
+    status : ZahlungEingangStatus__419886298
+  };
+type Zahlung__644465209 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__337815941;
+    datum : Text;
+    id : ZahlungId__229497893;
+    kanzleiId : KanzleiId__237136202;
+    rechnungId : RechnungId__220905315;
+    status : ZahlungEingangStatus__868985786
+  };
+type Zahlung__806254896 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__193520280;
+    datum : Text;
+    id : ZahlungId__109345887;
+    kanzleiId : KanzleiId__573383471;
+    rechnungId : RechnungId__894704366;
+    status : ZahlungEingangStatus__942288218
+  };
+type Zahlung__814019181 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__484678676;
+    datum : Text;
+    id : ZahlungId__852630008;
+    kanzleiId : KanzleiId__984198703;
+    rechnungId : RechnungId__885554351;
+    status : ZahlungEingangStatus__3712969
+  };
+type Zahlung__846826925 =
+  {
+    betrag : Nat;
+    createdAt : Timestamp__260586903;
+    datum : Text;
+    id : ZahlungId__299381171;
+    kanzleiId : KanzleiId__761406786;
+    rechnungId : RechnungId__771898738;
+    status : ZahlungEingangStatus__490869318
+  };
+type ZahlungsStatus__105479829 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__1061090197 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__349769927 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__353633203 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__401179596 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__41778463 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__497671008 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__56028077 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__670434909 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__676513625 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__683950183 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__706030892 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__753977574 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__812841874 = {#bezahlt; #offen; #ueberfaellig};
+type ZahlungsStatus__917348861 = {#bezahlt; #offen; #ueberfaellig};
+type Zahlungsmodalitaet__1019056007 = {#jahres; #monats};
+type Zahlungsmodalitaet__108451750 = {#jahres; #monats};
+type Zahlungsmodalitaet__279848286 = {#jahres; #monats};
+type Zahlungsmodalitaet__281289695 = {#jahres; #monats};
+type Zahlungsmodalitaet__365401699 = {#jahres; #monats};
+type Zahlungsmodalitaet__367262598 = {#jahres; #monats};
+type Zahlungsmodalitaet__401249149 = {#jahres; #monats};
+type Zahlungsmodalitaet__572241424 = {#jahres; #monats};
+type Zahlungsmodalitaet__598637363 = {#jahres; #monats};
+type Zahlungsmodalitaet__779221736 = {#jahres; #monats};
+type Zahlungsmodalitaet__79481300 = {#jahres; #monats};
+type Zahlungsmodalitaet__843073507 = {#jahres; #monats};
+type Zahlungsmodalitaet__855138218 = {#jahres; #monats};
+type Zahlungsmodalitaet__87776173 = {#jahres; #monats};
+type Zahlungsmodalitaet__968243034 = {#jahres; #monats};
+{
+  "20260724_102008" : (old : OldActor__997666542) -> NewActor__541295713;
+  "20260724_160000" : (old : OldActor__885678680) -> NewActor__465547207;
+  "20260724_190221" : (old : OldActor__210447126) -> NewActor__852830555;
+  "20260724_200000" : (old : OldActor__836982589) -> NewActor__870284675;
+  "20260727_000000" : (old : OldActor__838338160) -> NewActor__882126555;
+  "20260809_000000" : (old : OldActor__220611212) -> NewActor__861681917;
+  "20260809_000001" : (old : OldActor__767507119) -> NewActor__55228231;
+  "20260810_000000" : (old : OldActor__674955567) -> NewActor__151502346;
+  "20260810_000100" : (old : OldActor__914486186) -> NewActor__521712192;
+  "20260812_000000" : (old : OldActor__525151473) -> NewActor__680108815;
+  "20260812_162245" : (old : OldActor__970016431) -> NewActor__785199120;
+  "20260812_180000" : (old : OldActor__34598060) -> NewActor__428139878;
+  "20260813_120000" : (old : OldActor__768613767) -> NewActor__506843142;
+  "20260817_000000" : (old : OldActor__852312503) -> NewActor__605662815
+}
+actor  {
+  stable auditLogs :
+    {
+      var root :
+        Node__430031793<AuditLogId__176736089, AuditLogEntry__813785158>;
+      var size : Nat__58649523
+    };
+  stable auslagen :
+    {
+      var root : Node__430031793<AuslageId__513296397, Auslage__499087084>;
+      var size : Nat__58649523
+    };
+  stable consentRecords :
+    {
+      var root :
+        Node__430031793<ConsentId__875556008, ConsentRecord__689329226>;
+      var size : Nat__58649523
+    };
+  stable dataAccessLogs :
+    {
+      var root :
+        Node__430031793<DatenschutzId__932739956, DataAccessLog__890221701>;
+      var size : Nat__58649523
+    };
+  stable inviteTokens :
+    {
+      var root : Node__430031793<Text, InviteToken__579721920>;
+      var size : Nat__58649523
+    };
+  stable kanzleien :
+    {
+      var root : Node__430031793<KanzleiId__17752468, Kanzlei__701653872>;
+      var size : Nat__58649523
+    };
+  stable klienten :
+    {
+      var root : Node__430031793<KlientId__287765035, Klient__624082035>;
+      var size : Nat__58649523
+    };
+  stable leistungen :
+    {
+      var root : Node__430031793<LeistungId__258696945, Leistung__683715547>;
+      var size : Nat__58649523
+    };
+  stable mandate :
+    {
+      var root : Node__430031793<MandatId__157897851, Mandat__760590090>;
+      var size : Nat__58649523
+    };
+  stable nextAuditId : {var count : Nat};
+  stable nextDataAccessId : {var count : Nat};
+  stable nextSupportConversationId : {var count : Nat};
+  stable nextSupportMessageId : {var count : Nat};
+  stable pendingRegistrations :
+    {
+      var root :
+        Node__430031793<PendingRegistrationId__528919439,
+                         PendingRegistration__748346039>;
+      var size : Nat__58649523
+    };
+  stable rechnungen :
+    {
+      var root : Node__430031793<RechnungId__59301919, Rechnung__534684638>;
+      var size : Nat__58649523
+    };
+  stable rechnungsNummer : {var count : Nat};
+  stable rechnungsvorlagen :
+    {
+      var root :
+        Node__430031793<KanzleiId__17752468, Rechnungsvorlage__497831746>;
+      var size : Nat__58649523
+    };
+  stable superAdminWhitelist :
+    {
+      var root :
+        Node__430031793<Principal, SuperAdminWhitelistEntry__387002569>;
+      var size : Nat__58649523
+    };
+  stable supportConversations :
+    {
+      var root :
+        Node__430031793<SupportConversationId__659344934,
+                         SupportConversation__95027270>;
+      var size : Nat__58649523
+    };
+  stable supportMessages :
+    {
+      var root :
+        Node__430031793<SupportMessageId__548160280,
+                         SupportMessage__112935291>;
+      var size : Nat__58649523
+    };
+  stable users :
+    {
+      var root : Node__430031793<Principal, Leistungserbringer__996978350>;
+      var size : Nat__58649523
+    };
+  stable zahlungen :
+    {
+      var root : Node__430031793<ZahlungId__156113644, Zahlung__531437748>;
+      var size : Nat__58649523
+    }
+};

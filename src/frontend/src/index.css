@@ -1,0 +1,498 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "General Sans";
+    --font-body: "DM Sans";
+    --font-mono: "JetBrains Mono";
+    --radius: 0.5rem;
+
+    --background: 0.98 0.01 0;
+    --foreground: 0.12 0.04 264;
+    --card: 1.0 0 0;
+    --card-foreground: 0.12 0.04 264;
+    --popover: 0.99 0 0;
+    --popover-foreground: 0.12 0.04 264;
+
+    --primary: 0.62 0.16 264;
+    --primary-foreground: 0.99 0 0;
+
+    --secondary: 0.96 0.02 0;
+    --secondary-foreground: 0.25 0.06 264;
+    --muted: 0.94 0.01 0;
+    --muted-foreground: 0.5 0.02 0;
+
+    --accent: 0.5 0.2 132;
+    --accent-foreground: 0.99 0 0;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+
+    /* Datenschutz semantic status colors (revDSG workflow) */
+    --success: 0.5 0.2 132;
+    --success-foreground: 0.99 0 0;
+    --warning: 0.72 0.16 65;
+    --warning-foreground: 0.18 0.05 65;
+    --info: 0.55 0.16 245;
+    --info-foreground: 0.99 0 0;
+    --danger: 0.55 0.22 25;
+    --danger-foreground: 0.98 0 0;
+
+    /* Audit-trail severity tints (backgrounds for severity badges) */
+    --audit-info: 0.94 0.04 245;
+    --audit-info-foreground: 0.4 0.13 245;
+    --audit-warning: 0.94 0.05 65;
+    --audit-warning-foreground: 0.4 0.13 65;
+    --audit-critical: 0.94 0.06 25;
+    --audit-critical-foreground: 0.45 0.18 25;
+
+    /* Datenschutz shield accent (navigation icon) — distinct teal-cyan,
+       stands out from the purple sidebar via strong hue separation (195 vs 264) */
+    --shield: 0.68 0.13 195;
+    --shield-foreground: 0.99 0 0;
+
+    --border: 0.92 0.01 0;
+    --input: 0.95 0.01 0;
+    --ring: 0.62 0.16 264;
+
+    --chart-1: 0.5 0.2 132;
+    --chart-2: 0.62 0.16 264;
+    --chart-3: 0.7 0.12 90;
+    --chart-4: 0.45 0.18 34;
+    --chart-5: 0.55 0.2 200;
+
+    --sidebar: 0.62 0.16 264;
+    --sidebar-foreground: 0.99 0 0;
+    --sidebar-primary: 0.99 0 0;
+    --sidebar-primary-foreground: 0.62 0.16 264;
+    --sidebar-accent: 0.5 0.2 132;
+    --sidebar-accent-foreground: 0.99 0 0;
+    --sidebar-border: 0.72 0.08 264;
+    --sidebar-ring: 0.75 0.12 264;
+  }
+
+  .dark {
+    --background: 0.12 0.02 0;
+    --foreground: 0.94 0.01 0;
+    --card: 0.16 0.02 0;
+    --card-foreground: 0.94 0.01 0;
+    --popover: 0.2 0.01 0;
+    --popover-foreground: 0.94 0.01 0;
+
+    --primary: 0.72 0.12 264;
+    --primary-foreground: 0.12 0.02 0;
+
+    --secondary: 0.22 0.01 0;
+    --secondary-foreground: 0.82 0.02 0;
+    --muted: 0.2 0.01 0;
+    --muted-foreground: 0.55 0.01 0;
+
+    --accent: 0.62 0.18 132;
+    --accent-foreground: 0.12 0.02 0;
+
+    --destructive: 0.65 0.19 22;
+    --destructive-foreground: 0.12 0.02 0;
+
+    /* Datenschutz semantic status colors (revDSG workflow) */
+    --success: 0.62 0.18 132;
+    --success-foreground: 0.12 0.02 0;
+    --warning: 0.78 0.14 65;
+    --warning-foreground: 0.18 0.05 65;
+    --info: 0.68 0.14 245;
+    --info-foreground: 0.12 0.02 0;
+    --danger: 0.65 0.19 22;
+    --danger-foreground: 0.12 0.02 0;
+
+    /* Audit-trail severity tints (backgrounds for severity badges) */
+    --audit-info: 0.24 0.05 245;
+    --audit-info-foreground: 0.82 0.1 245;
+    --audit-warning: 0.26 0.06 65;
+    --audit-warning-foreground: 0.82 0.1 65;
+    --audit-critical: 0.26 0.08 25;
+    --audit-critical-foreground: 0.82 0.12 25;
+
+    /* Datenschutz shield accent (navigation icon) — distinct teal-cyan,
+       tuned lighter for dark-mode legibility against purple sidebar */
+    --shield: 0.74 0.12 195;
+    --shield-foreground: 0.12 0.02 0;
+
+    --border: 0.24 0.01 0;
+    --input: 0.22 0.01 0;
+    --ring: 0.72 0.12 264;
+
+    --chart-1: 0.62 0.18 132;
+    --chart-2: 0.72 0.12 264;
+    --chart-3: 0.78 0.1 90;
+    --chart-4: 0.56 0.16 34;
+    --chart-5: 0.67 0.18 200;
+
+    --sidebar: 0.62 0.16 264;
+    --sidebar-foreground: 0.94 0.01 0;
+    --sidebar-primary: 0.94 0.01 0;
+    --sidebar-primary-foreground: 0.62 0.16 264;
+    --sidebar-accent: 0.62 0.18 132;
+    --sidebar-accent-foreground: 0.12 0.02 0;
+    --sidebar-border: 0.68 0.1 264;
+    --sidebar-ring: 0.78 0.14 264;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/assets/fonts/GeneralSans.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DMSans.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground font-medium text-sm px-4 py-2 transition-smooth hover:opacity-90 active:opacity-80;
+  }
+
+  .btn-success {
+    @apply inline-flex items-center justify-center rounded-md bg-accent text-accent-foreground font-medium text-sm px-4 py-2 transition-smooth hover:opacity-90 active:opacity-80;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-md text-foreground font-medium text-sm px-4 py-2 transition-smooth hover:bg-muted active:bg-muted/50;
+  }
+
+  /* Datenschutz status badges (revDSG DSR workflow + audit severity) */
+  .badge-success {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--success) / 0.12);
+    color: oklch(var(--success));
+  }
+  .badge-warning {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--warning) / 0.18);
+    color: oklch(var(--warning-foreground));
+  }
+  .badge-info {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--info) / 0.12);
+    color: oklch(var(--info));
+  }
+  .badge-danger {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--danger) / 0.12);
+    color: oklch(var(--danger));
+  }
+  .badge-neutral {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body bg-muted text-muted-foreground;
+  }
+  .badge-audit-info {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--audit-info));
+    color: oklch(var(--audit-info-foreground));
+  }
+  .badge-audit-warning {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--audit-warning));
+    color: oklch(var(--audit-warning-foreground));
+  }
+  .badge-audit-critical {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium font-body;
+    background: oklch(var(--audit-critical));
+    color: oklch(var(--audit-critical-foreground));
+  }
+
+  /* Datenschutz shield icon accent for sidebar navigation.
+     Teal-cyan stands out clearly from the purple sidebar background. */
+  .shield-icon {
+    color: oklch(var(--shield));
+  }
+  .shield-icon-active {
+    color: oklch(var(--shield-foreground));
+  }
+
+  /* Demo-Umgebung-Hinweis — gelb hinterlegtes Element im Kopfbereich auf
+     allen Seiten (rechts neben dem Logo). Dunkler Text auf warmer gelber
+     Fläche für hohe Lesbarkeit; abgerundet mit dezenter Border. */
+  .demo-notice {
+    @apply inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium font-body;
+    background: oklch(0.85 0.16 80);
+    color: oklch(0.22 0.06 65);
+    border: 1px solid oklch(0.78 0.14 80 / 0.6);
+  }
+
+  /* Kompakte, klickbare „Feedback geben"-Aktion innerhalb des gelben
+     Demo-Badges. Bleibt inline und nicht überdimensioniert; liest sich als
+     Aktion (unterstrichen beim Hover), nutzt den dunkelbraunen Badge-Text
+     und einen hauchdünnen Trenner. Erbt die Badge-Schriftgröße. */
+  .demo-notice-action {
+    @apply inline-flex items-center font-medium font-body text-sm;
+    color: oklch(0.22 0.06 65);
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline transparent;
+    transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
+  }
+  .demo-notice-action:hover {
+    text-decoration-color: oklch(0.22 0.06 65);
+    opacity: 0.75;
+  }
+  .demo-notice-action:focus-visible {
+    outline: 2px solid oklch(0.22 0.06 65);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .demo-notice-divider {
+    @apply inline-block;
+    width: 1px;
+    height: 0.875rem;
+    background: oklch(0.22 0.06 65 / 0.25);
+  }
+
+  /* Feedback-Modal — kompakter Editor (Overlay + Panel + Header + Form).
+     Wiederverwendet bestehende popover/card/border/input/ring-Tokens;
+     keine neuen Farb-Tokens. */
+  .feedback-modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center p-4;
+    background: oklch(var(--foreground) / 0.45);
+    backdrop-filter: blur(2px);
+  }
+  .feedback-modal-panel {
+    @apply w-full max-w-md rounded-lg border bg-popover text-popover-foreground shadow-lg;
+    border-color: oklch(var(--border));
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .feedback-modal-header {
+    @apply flex items-center justify-between gap-3 px-5 py-4 border-b;
+    border-color: oklch(var(--border));
+  }
+  .feedback-modal-title {
+    @apply font-display text-base font-semibold;
+    color: oklch(var(--foreground));
+  }
+  .feedback-modal-close {
+    @apply inline-flex items-center justify-center rounded-md p-1.5 transition-smooth;
+    color: oklch(var(--muted-foreground));
+  }
+  .feedback-modal-close:hover {
+    background: oklch(var(--muted));
+    color: oklch(var(--foreground));
+  }
+  .feedback-modal-body {
+    @apply px-5 py-4 flex flex-col gap-4;
+  }
+  .feedback-field {
+    @apply flex flex-col gap-1.5;
+  }
+  .feedback-label {
+    @apply text-sm font-medium font-body;
+    color: oklch(var(--foreground));
+  }
+  .feedback-label-required::after {
+    content: " *";
+    color: oklch(var(--danger));
+  }
+  .feedback-input,
+  .feedback-select,
+  .feedback-textarea {
+    @apply rounded-md border bg-input px-3 py-2 text-sm font-body transition-smooth;
+    border-color: oklch(var(--border));
+    color: oklch(var(--foreground));
+  }
+  .feedback-input:focus,
+  .feedback-select:focus,
+  .feedback-textarea:focus {
+    outline: none;
+    border-color: oklch(var(--ring));
+    box-shadow: 0 0 0 2px oklch(var(--ring) / 0.35);
+  }
+  .feedback-textarea {
+    @apply resize-y min-h-[7rem];
+  }
+  .feedback-modal-footer {
+    @apply flex items-center justify-end gap-2 px-5 py-4 border-t;
+    border-color: oklch(var(--border));
+  }
+  .feedback-success {
+    @apply flex flex-col items-center gap-3 px-5 py-8 text-center;
+  }
+  .feedback-success-icon {
+    @apply inline-flex items-center justify-center rounded-full;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: oklch(var(--success) / 0.14);
+    color: oklch(var(--success));
+  }
+  .feedback-success-title {
+    @apply font-display text-base font-semibold;
+    color: oklch(var(--foreground));
+  }
+  .feedback-success-text {
+    @apply text-sm font-body;
+    color: oklch(var(--muted-foreground));
+  }
+
+  /* Support-Status-Badges — semantische Aliasse auf bestehende Badge-Klassen.
+     neu → info (blau), in_bearbeitung → warning (amber), erledigt → success
+     (grün), archiviert → neutral (grau). Keine neuen Farb-Tokens. */
+  .badge-feedback-neu {
+    @apply badge-info;
+  }
+  .badge-feedback-in-bearbeitung {
+    @apply badge-warning;
+  }
+  .badge-feedback-erledigt {
+    @apply badge-success;
+  }
+  .badge-feedback-archiviert {
+    @apply badge-neutral;
+  }
+
+  /* Ungelesen-Indikator für Inbox- und „Meine Nachrichten"-Listen.
+     Kleiner Punkt in Primary-Purple + dezente Zeilen-Hervorhebung. */
+  .feedback-unread-dot {
+    @apply inline-block rounded-full flex-shrink-0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: oklch(var(--primary));
+  }
+  .feedback-row-unread {
+    background: oklch(var(--primary) / 0.06);
+  }
+  .feedback-row-unread .feedback-row-title {
+    @apply font-semibold;
+    color: oklch(var(--foreground));
+  }
+
+  /* Blauer Status-Punkt neben dem 'Feedback & Support'-Navigationspunkt für
+     den Plattform-Admin. Erscheint nur, wenn mindestens eine Konversation den
+     Status 'Neu' hat. Nutzt das bestehende Info-Blau (--info), kein neues
+     Farb-Token. */
+  .nav-unread-dot {
+    @apply inline-block rounded-full flex-shrink-0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: oklch(var(--info));
+    box-shadow: 0 0 0 2px oklch(var(--sidebar) / 0.6);
+  }
+
+  /* Kompakter Nachrichten-Thread — Blasen für Benutzer vs. Plattform-Admin.
+     Minimal, keine Dekoration; unterscheidbar über Ausrichtung + Tönung. */
+  .feedback-thread {
+    @apply flex flex-col gap-2;
+  }
+  .feedback-bubble {
+    @apply rounded-lg px-3 py-2 text-sm font-body max-w-[80%];
+  }
+  .feedback-bubble-meta {
+    @apply text-xs font-body mt-1;
+    color: oklch(var(--muted-foreground));
+  }
+  .feedback-bubble-user {
+    @apply self-end rounded-br-sm;
+    background: oklch(var(--primary) / 0.12);
+    color: oklch(var(--foreground));
+  }
+  .feedback-bubble-admin {
+    @apply self-start rounded-bl-sm;
+    background: oklch(var(--muted));
+    color: oklch(var(--foreground));
+  }
+
+  /* ===== Registrierung: 3-Schritt-Flow =====
+     Nutzt ausschliesslich bestehende Tokens — kein neues Farb-Token.
+     Aktiver Schritt = primary (purple), abgeschlossen = success (grün),
+     Status-Hinweise = info (blau). Mono für den 6-stelligen Einmalcode. */
+  .reg-step {
+    @apply flex items-center gap-3;
+  }
+  .reg-step-dot {
+    @apply inline-flex items-center justify-center rounded-full font-display font-semibold text-sm transition-smooth;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: oklch(var(--muted));
+    color: oklch(var(--muted-foreground));
+    border: 1px solid oklch(var(--border));
+    flex-shrink: 0;
+  }
+  .reg-step-dot-active {
+    background: oklch(var(--primary));
+    color: oklch(var(--primary-foreground));
+    border-color: oklch(var(--primary));
+  }
+  .reg-step-dot-complete {
+    background: oklch(var(--success));
+    color: oklch(var(--success-foreground));
+    border-color: oklch(var(--success));
+  }
+  .reg-step-label {
+    @apply text-sm font-medium;
+    color: oklch(var(--muted-foreground));
+  }
+  .reg-step-label-active {
+    color: oklch(var(--foreground));
+  }
+  .reg-step-label-complete {
+    color: oklch(var(--foreground));
+  }
+  .reg-step-connector {
+    @apply flex-1;
+    height: 2px;
+    background: oklch(var(--border));
+    min-width: 1.5rem;
+  }
+  .reg-step-connector-complete {
+    background: oklch(var(--success));
+  }
+
+  /* 6-stelliger Bestätigungscode — Mono, gross, zentriert, weiter Zeichenabstand */
+  .verification-code-input {
+    @apply rounded-md font-mono text-center text-2xl border bg-input transition-smooth;
+    border-color: oklch(var(--border));
+    color: oklch(var(--foreground));
+    letter-spacing: 0.5em;
+    padding-left: 0.5em;
+  }
+  .verification-code-input:focus {
+    outline: none;
+    border-color: oklch(var(--ring));
+    box-shadow: 0 0 0 2px oklch(var(--ring) / 0.35);
+  }
+
+  /* Status-Meldungen im Registrierungs-Flow — info-Blau / success-Grün */
+  .status-message-info {
+    @apply inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-body;
+    background: oklch(var(--info) / 0.12);
+    color: oklch(var(--info));
+  }
+  .status-message-success {
+    @apply inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-body;
+    background: oklch(var(--success) / 0.12);
+    color: oklch(var(--success));
+  }
+}
